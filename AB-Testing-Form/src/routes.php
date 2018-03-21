@@ -6,6 +6,8 @@ use Slim\Http\Response;
 // Routes
 
 $app->get('/', function (Request $request, Response $response, array $args) {
+	// TODO: Get random color scheme, apply to template
+	
     // Sample log message
     $this->logger->info("Slim-Skeleton '/' route");
 
