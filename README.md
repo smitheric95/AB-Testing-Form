@@ -5,4 +5,7 @@
 	- python script to check database and write sass?
 	- sass input.scss output.css
 	- make a few different sass tylesheets, choose a random one w jquery
-
+- understand that I should enter accurate information
+- captcha
+- check for smu email
+- buy .com domain
