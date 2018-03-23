@@ -1,3 +1,9 @@
-* {
-	/*background-color: red !important;*/
+/*
+	styles applied to all pages regardless of theme
+*/
+
+
+/* Hide all steps by default: */
+.page {
+  display: none;
 }

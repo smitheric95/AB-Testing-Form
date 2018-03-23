@@ -14,21 +14,15 @@
 
 <!-- custom JavaScript and CSS -->
 <script src="/../js/main.js"></script>
-<!-- <link rel="stylesheet" type="text/css" href="/css/main.css"/> -->
-<link rel="stylesheet" type="text/css" href="/css/theme_one.css"/>
+<link rel="stylesheet" type="text/css" href="/css/main.css"/>
 
-<style>
-/* Hide all steps by default: */
-.page {
-  display: none;
-}
-</style>
+<!-- random theme -->
+<link rel="stylesheet" type="text/css" href="/css/theme_one.css"/>
 
 <body>
 
 <div class="row">
     <form action="/postForm" method="POST" class="col s12">
-        
         <div class="page" id="page1">
             <div class="row">
                 <div class="input-field col s12">
@@ -67,11 +61,16 @@
 </div>
 
 <script>
-var currentTab = 0; // Current tab is set to be the first tab (0)
-showTab(currentTab); // Display the crurrent tab
+/*
+    Logic for multi-page form
+    https://www.w3schools.com/howto/howto_js_form_steps.asp
+*/
 
-function showTab(n) {
-  // This function will display the specified tab of the form...
+var currentPage = 0; // Current page is first page
+showPage(currentPage); // Display the crurrent page
+
+function showPage(n) {
+  // This function will display the specified page of the form...
   var x = document.getElementsByClassName("page");
   x[n].style.display = "block";
   //... and fix the Previous/Next buttons:
@@ -85,30 +84,46 @@ function showTab(n) {
 }
 
 function nextPrev(n) {
-  // This function will figure out which tab to display
+  // This function will figure out which page to display
   var x = document.getElementsByClassName("page");
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateForm()) return false;
-  // Hide the current tab:
-  x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
-  currentTab = currentTab + n;
+
+  var inputsInvalid = false;
+  console.log($(x[n-1]).find("input"));
+  $(x[n-1]).find("input").each(function() {
+  	if ($(this).hasClass("invalid")){
+  		inputsInvalid = true;
+  	}
+  });
+
+  if (inputsInvalid) return false;
+
+
+// still returns valid if page is refreshed after input has been entered
+
+
+
+  // Exit the function if any field in the current page is invalid:
+  if (n == 1 && $(x[n]).hasClass("invalid")) return false;
+  // Hide the current page:
+  x[currentPage].style.display = "none";
+  // Increase or decrease the current page by 1:
+  currentPage = currentPage + n;
   // if you have reached the end of the form...
-  if (currentTab >= x.length) {
+  if (currentPage >= x.length) {
     // ... the form gets submitted:
     document.getElementById("regForm").submit();
     return false;
   }
-  // Otherwise, display the correct tab:
-  showTab(currentTab);
+  // Otherwise, display the correct page:
+  showPage(currentPage);
 }
 
 function validateForm() {
   // This function deals with validation of the form fields
   var x, y, i, valid = true;
   x = document.getElementsByClassName("page");
-  y = x[currentTab].getElementsByTagName("input");
-  // A loop that checks every input field in the current tab:
+  y = x[currentPage].getElementsByTagName("input");
+  // A loop that checks every input field in the current page:
   for (i = 0; i < y.length; i++) {
     // If a field is empty...
     if (y[i].value == "") {

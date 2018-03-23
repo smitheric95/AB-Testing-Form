@@ -1,3 +1,4 @@
 $(document).ready(function() {
-	console.log('hi');
+	// clear all inputs in the form
+	$('form')[0].reset();
 });
