@@ -10,3 +10,4 @@
 - check for smu email
 - buy .com domain
 - php -S localhost:8080 -t public public/index.php
+-composer require zytzagoo/smtp-validate-email --update-no-dev 

@@ -25,35 +25,26 @@
 <body>
 
 <div class="row">
-    <form action="/postForm" method="POST" class="col s12">
+	<!-- <form id="mainForm" action="/postForm" method="POST" class="col s12"> -->
+    <form action="/validateEmail" id="mainForm" method="POST" class="col s12">
         <div class="page" id="page1">
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
+                    <input id="email" name="email" type="email" class="validate">
                     <label for="email">Email 1</label>
                 </div>
             </div>
         </div>
 
-        <div class="page" id="page2">
+<!--         <div class="page" id="page2">
             <div class="row">
                 <div class="input-field col s12">
                     <input id="email" type="email" class="validate">
                     <label for="email">Email 2</label>
                 </div>
             </div>
-
         </div>
-
-        <div class="page" id="page3">
-            <div class="row">
-                <div class="input-field col s12">
-                    <input type="text" class="validate">
-                    <label for="email">Email 3</label>
-                </div>
-            </div>
-
-        </div>
+-->
 
         <div style="overflow:auto;">
             <div style="float:right;">

@@ -3,6 +3,9 @@
 use Slim\Http\Request;
 use Slim\Http\Response;
 
+require 'vendor/autoload.php';
+use SMTPValidateEmail\Validator as SmtpEmailValidator;
+
 // Routes
 
 $app->get('/', function (Request $request, Response $response, array $args) {
@@ -21,3 +24,19 @@ $app->post('/postForm', function ($request, $response, $args) {
 
     return json_encode($data);
 });
+
+// Adapted from: https://github.com/zytzagoo/smtp-validate-email
+$app->post('/validateEmail', function ($request, $response, $args) { 
+	$data = $request->getParsedBody();
+
+	$email     = $data[email];
+	$sender    = $data[email];
+	$validator = new SmtpEmailValidator($email, $sender);
+
+	// If debug mode is turned on, logged data is printed as it happens:
+	// $validator->debug = true;
+	$results   = $validator->validate();
+
+	var_dump($results[$email]);
+});
+
