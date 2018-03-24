@@ -28,16 +28,17 @@ $app->post('/postForm', function ($request, $response, $args) {
 // Adapted from: https://github.com/zytzagoo/smtp-validate-email
 $app->post('/validateEmail', function ($request, $response, $args) { 
 	$data = $request->getParsedBody();
+	
 
 	$email     = $data[email];
 	$sender    = $data[email];
 	$validator = new SmtpEmailValidator($email, $sender);
-
+	
 	// If debug mode is turned on, logged data is printed as it happens:
 	// $validator->debug = true;
+
 	$results   = $validator->validate();
-
-
+	
 	return json_encode($results[$email]);
 });
 

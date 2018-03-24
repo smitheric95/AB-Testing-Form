@@ -5,24 +5,39 @@
 var currentPage = 0; // Current page is first page
 showPage(currentPage); // Display the crurrent page
 
-$(document).ready(function() {
+$('#nextBtn').click(function() {
     console.log("currentPage: " + currentPage);
+    // if the user hasn't validated email yet
+    if (currentPage == 0) {
+        // show progress bar
+        $('.progress').css('opacity', '1');
+
+        // display 'validating email' text
+        console.log("validating email...");
+        $('#page1').find('.helper-text').text('Validating email...');
+
+        $.post("/validateEmail", { email: $('#email').val() }, function(data, status){
+            console.log("Email is valid: " + data);
+
+            // email is invalid
+            if (data != "true") {
+                $('#email').addClass("invalid");
+                $('#page1').find('.helper-text').text('Please enter a valid SMU email.');
+            }
+
+            $('.progress').css('opacity', '0');
+            nextPrev(1)
+        });
+    }
+    else {
+        nextPrev(1);
+    }
 });
 
 // email validation
-// 
-$("#nextBtn").click(function(){
-    console.log("currentPage: " + currentPage);
-
-    // if the user hasn't validated email yet
-    if (currentPage == 0) {
-        console.log("click");
-        $.post("/validateEmail", { email: $('#email').val() }, function(data, status){
-            console.log("Email is valid: " + data);
-            
-        });
-    }
-});
+function validateEmail() {
+    
+}
 
 function showPage(n) {
     // This function will display the specified page of the form...
@@ -45,16 +60,13 @@ function nextPrev(n) {
     var inputsInvalid = false;
 
     $(x[n - 1]).find("input").each(function() {
-        // the input is invalid
-        if ($(this).hasClass("invalid")) {
-            inputsInvalid = true;
-        }
-        // the input is empty
-        else if ($(this)[0].value == "") {
+        // the input is invalid or it's empty
+        if ($(this).hasClass("invalid") || $(this)[0].value == "") {
             $(this).addClass("invalid")
             inputsInvalid = true;
         }
     });
+
 
     if (inputsInvalid) return false;
 
