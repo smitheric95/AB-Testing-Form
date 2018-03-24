@@ -21,30 +21,38 @@
 <link rel="stylesheet" type="text/css" href="/css/main.css"/>
 <!-- random theme -->
 <link rel="stylesheet" type="text/css" href="/css/theme_one.css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	// next button has been clicked 
+	
+});
+</script>
+
 </head>
 <body>
 
 <div class="row">
 	<!-- <form id="mainForm" action="/postForm" method="POST" class="col s12"> -->
-    <form action="/validateEmail" id="mainForm" method="POST" class="col s12">
+    <form id="mainForm" method="POST" class="col s12">
         <div class="page" id="page1">
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="email" name="email" type="email" class="validate">
-                    <label for="email">Email 1</label>
+                    <input id="email" name="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
                 </div>
             </div>
         </div>
 
-<!--         <div class="page" id="page2">
+         <div class="page" id="page2">
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Email 2</label>
+                    <input id="text1" type="text" class="validate">
+                    <label for="text1">text1</label>
                 </div>
             </div>
         </div>
--->
+
 
         <div style="overflow:auto;">
             <div style="float:right;">

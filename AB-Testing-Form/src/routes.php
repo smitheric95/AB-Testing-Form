@@ -37,6 +37,7 @@ $app->post('/validateEmail', function ($request, $response, $args) {
 	// $validator->debug = true;
 	$results   = $validator->validate();
 
-	var_dump($results[$email]);
+
+	return json_encode($results[$email]);
 });
 
