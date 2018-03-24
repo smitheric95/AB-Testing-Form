@@ -12,9 +12,11 @@ $('#nextBtn').click(function() {
         // show progress bar
         $('.progress').css('opacity', '1');
 
+        var helperText = $('#page1').find('.helper-text');
+
         // display 'validating email' text
         console.log("validating email...");
-        $('#page1').find('.helper-text').text('Validating email...');
+        helperText.text('Validating email...');
 
         $.post("/validateEmail", { email: $('#email').val() }, function(data, status){
             console.log("Email is valid: " + data);
@@ -22,7 +24,8 @@ $('#nextBtn').click(function() {
             // email is invalid
             if (data != "true") {
                 $('#email').addClass("invalid");
-                $('#page1').find('.helper-text').text('Please enter a valid SMU email.');
+                helperText.text('Please enter a valid SMU email.');
+                helperText.css('color', '#f44336');
             }
 
             $('.progress').css('opacity', '0');

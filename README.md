@@ -6,8 +6,8 @@
 	- sass input.scss output.css
 	- make a few different sass tylesheets, choose a random one w jquery
 - understand that I should enter accurate information
-- captcha
-- check for smu email
+- check for smu email only
+- check to see if email has been used
 - buy .com domain
 - php -S localhost:8080 -t public public/index.php
--composer require zytzagoo/smtp-validate-email --update-no-dev 
+- composer require zytzagoo/smtp-validate-email --update-no-dev 

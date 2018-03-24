@@ -100,4 +100,3 @@
 ### Behavior metrics
 * time to complete
 * dropout
-* immediate bounce rate?

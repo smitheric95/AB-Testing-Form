@@ -10,8 +10,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!-- http://materializecss.com -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <!-- custom JavaScript and CSS -->
 
 <!-- main js file -->
@@ -22,12 +21,17 @@
 <!-- random theme -->
 <link rel="stylesheet" type="text/css" href="/css/theme_one.css"/>
 
+<script>
+$(document).ready(function(){
+	$('select').formSelect();
+});
+</script>
+
 </head>
 <body>
 
 <div class="row">
-	<!-- <form id="mainForm" action="/postForm" method="POST" class="col s12"> -->
-    <form id="mainForm" method="POST" class="col s12">
+	<form id="mainForm" action="/postForm" method="POST" class="col s12">
         <div class="page" id="page1">
             <div class="row">
 				<div class="progress">
@@ -38,21 +42,25 @@
                 <div class="input-field col s12">
                     <input id="email" name="email" type="email" class="validate" required>
                     <label for="email">Email</label>
-                    <span class="helper-text" data-error="Invalid email" data-success="right">Please enter a valid SMU email.</span>
+                    <span class="helper-text">Please enter a valid SMU email.</span>
                 </div>
             </div>
         </div>
 
-         <div class="page" id="page2">
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="text1" type="text" class="validate">
-                    <label for="text1">text1</label>
-                </div>
-            </div>
-        </div>
-
-
+		<div class="page" id="page2">
+			<div class="row">
+				<div class="input-field col s12">
+					<select>
+						<option value="" disabled selected>Choose your option</option>
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+					</select>
+					<label>1. How often do you use a desktop or laptop computer?</label>
+				</div>
+			</div>
+	    </div>
+	
         <div style="overflow:auto;">
             <div style="float:right;">
                 <button class="btn" type="button" id="nextBtn">Next</button>
