@@ -5,18 +5,18 @@
 var currentPage = 0; // Current page is first page
 showPage(currentPage); // Display the crurrent page
 
+
+/*
+    NOTE: remove this when uncommenting email
+*/
+
+currentPage = 1;
+
 $('#nextBtn').click(function() {
     console.log("currentPage: " + currentPage);
     // if the user hasn't validated email yet
-
-
-/*
-NOTE: CHANGE THIS NUMBER BACK TO '0'
-      may need to change curFrom =
-*/
-
-
-    if (currentPage == 1) {
+    
+    if (currentPage == 0) {
         // show progress bar
         $('.progress').css('opacity', '1');
 
@@ -46,7 +46,8 @@ NOTE: CHANGE THIS NUMBER BACK TO '0'
         formIsValid = true;
 
         // calculate form based off page
-        curForm = "#page" + currentPage + " div.input-field";
+        curForm = "#page" + (currentPage+1) + " div.input-field";
+        console.log(curForm);
 
         // check each dropdown for valid... values
         $(curForm).each(function() {
