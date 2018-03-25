@@ -6,12 +6,6 @@ var currentPage = 0; // Current page is first page
 showPage(currentPage); // Display the crurrent page
 
 
-/*
-    NOTE: remove this when uncommenting email
-*/
-
-currentPage = 1;
-
 $('#nextBtn').click(function() {
     console.log("currentPage: " + currentPage);
     // if the user hasn't validated email yet
@@ -61,6 +55,7 @@ $('#nextBtn').click(function() {
 
                 formIsValid = false;
                 console.log("invalid");
+
                 // show warning text
                 dropDown.addClass('invalid');
                 $(this).find('.helper-text').css('opacity', '1');
