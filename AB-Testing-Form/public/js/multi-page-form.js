@@ -59,7 +59,7 @@ NOTE: CHANGE THIS NUMBER BACK TO '0'
                 selectValue == "Select all that apply") {
 
                 formIsValid = false;
-
+                console.log("invalid");
                 // show warning text
                 dropDown.addClass('invalid');
                 $(this).find('.helper-text').css('opacity', '1');
