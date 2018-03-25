@@ -11,12 +11,12 @@
 .progress {
 	opacity: 0;
 }
-
+/*
 h2 {
 	padding-left: 30px;
 	margin-top: 10px;
 	margin-bottom: 30px;
-}
+}*/
 
 h5 {
 	margin-left: 10px;
@@ -34,7 +34,7 @@ body {
 }
 
 .section {
-	padding-left: 30px;
+	/*padding-left: 30px;*/
 }
 
 .divider {

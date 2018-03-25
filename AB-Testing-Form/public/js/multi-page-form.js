@@ -68,6 +68,8 @@ $('#nextBtn').click(function() {
         if (formIsValid) {
             nextPrev(1);    
         }
+
+        window.scrollTo(0,0);
     }
 });
 

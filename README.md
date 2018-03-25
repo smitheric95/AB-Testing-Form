@@ -6,7 +6,9 @@ TODO:
 	- python script to check database and write sass?
 	- sass input.scss output.css
 	- make a few different sass tylesheets, choose a random one w jquery
+
 - check for smu email only
+	- still buggy - test on vagrant
 - check to see if email has been used
 - buy .com domain
 - make different themes
