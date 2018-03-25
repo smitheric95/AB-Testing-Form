@@ -5,7 +5,7 @@
 */
 var currentPage = 0; // Current page is first page
 showPage(currentPage); // Display the crurrent page
-
+timeStarted = 0; // When the user startd the form
 
 // when the "next" button is clicked, go to the next page
 $('#nextBtn').click(function() {
@@ -82,6 +82,7 @@ $('select').change(function() {
     }
 });
 
+
 function showPage(n) {
     // This function will display the specified page of the form...
     var x = document.getElementsByClassName("page");
@@ -97,6 +98,11 @@ function showPage(n) {
 }
 
 function nextPrev(n) {
+    // the user has started the form
+    if (currentPage == 0) {
+        timeStarted = Date.now();
+    }
+
     // This function will figure out which page to display
     var x = document.getElementsByClassName("page");
 
@@ -115,12 +121,21 @@ function nextPrev(n) {
 
     // Exit the function if any field in the current page is invalid:
     if (n == 1 && $(x[n]).hasClass("invalid")) return false;
+    
     // Hide the current page:
     x[currentPage].style.display = "none";
+    
     // Increase or decrease the current page by 1:
     currentPage = currentPage + n;
+
     // if you have reached the end of the form...
     if (currentPage >= x.length) {
+        // note when the time it took to complete the form
+        timeElapsed = (Date.now() - timeStarted) / 1000;
+
+        // change the hidden form element value
+        $('#timeToComplete').val(timeElapsed);
+
         // ... the form gets submitted:
         document.getElementById("mainForm").submit();
         return false;
