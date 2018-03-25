@@ -7,6 +7,7 @@ var currentPage = 0; // Current page is first page
 showPage(currentPage); // Display the crurrent page
 
 
+// when the "next" button is clicked, go to the next page
 $('#nextBtn').click(function() {
     console.log("currentPage: " + currentPage);
     // if the user hasn't validated email yet
@@ -67,6 +68,15 @@ $('#nextBtn').click(function() {
         if (formIsValid) {
             nextPrev(1);    
         }
+    }
+});
+
+// check validity of dropdown when its value changes
+$('select').change(function() {
+    // if a value has been selected, remove the invalid class
+    if ($(this).val() != "") {
+        $(this).siblings('input.select-dropdown').removeClass("invalid");
+        $(this).parent().siblings('.helper-text').css('opacity', '0');
     }
 });
 
