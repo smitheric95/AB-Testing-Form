@@ -47,13 +47,15 @@ body {
 }
 
 .heading {
-	background-color: #26a69a;
+	background-color: #26a69a; /* TODO: change w theme */
 	color: #ffffff;
 	box-shadow: 0 1px 1px -1px gray;
 }
 
 .heading > h3 {
-	padding: 40px 25px;
+	padding: 40px 25px 10px 25px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
 
 form {
@@ -65,3 +67,10 @@ form {
     right: 16%;
     margin-top: -30px;
 }
+
+h5 > span {
+	/* TODO: change w theme */
+	color: #26a69a;
+	margin-right: 15px;
+}
+

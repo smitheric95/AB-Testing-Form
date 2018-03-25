@@ -22,7 +22,7 @@ $app->post('/postForm', function ($request, $response, $args) {
     // get the data from the form
     $data = $request->getParsedBody();
 
-    var_dump($data);
+    echo "<pre>";var_dump($data);echo "</pre>";
 
     return $this->renderer->render($response, 'thankyou.phtml', $args);
 });
