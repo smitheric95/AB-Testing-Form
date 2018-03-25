@@ -25,6 +25,10 @@
 $(document).ready(function(){
 	// initialize select form elements
 	$('select').formSelect();
+
+	$('#computer-button').click(function() {
+		$('#computerButtonClicked').val(true);
+	});
 });
 </script>
 
@@ -35,9 +39,13 @@ $(document).ready(function(){
 <div class="container z-depth-2">
 	<div class="row heading">
 		<h3>SMU Technology Survey</h3>
-		<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">share</i></a>
+		<a id="computer-button" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">desktop_mac</i></a>
 	</div>
 	<form id="mainForm" action="/postForm" method="POST" class="col s12">
+		<!-- hidden form values for additional user info -->
+		<input id="computerButtonClicked" type="hidden" name="computerButtonClicked" value="false"/>
+		<input id="timeToComplete" type="hidden" name="timeToComplete" value="0"/>
+
         <div class="page" id="page1">            
 		    <div class="row">
 				<div class="progress">

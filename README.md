@@ -8,10 +8,12 @@ TODO:
 	- make a few different sass tylesheets, choose a random one w jquery
 
 - collect info on time to complete
+- switch heading to roboto font
 - check for smu email only
 	- still buggy - test on vagrant
 - check to see if email has been used
 - buy .com domain
+	- change email button
 - make different themes
 - php -S localhost:8080 -t public public/index.php
 - composer require zytzagoo/smtp-validate-email --update-no-dev 
