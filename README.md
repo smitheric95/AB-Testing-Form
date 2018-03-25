@@ -15,3 +15,9 @@ TODO:
 - make different themes
 - php -S localhost:8080 -t public public/index.php
 - composer require zytzagoo/smtp-validate-email --update-no-dev 
+
+
+DB:
+
+Responses:
+	email, theme, time, response (json)
