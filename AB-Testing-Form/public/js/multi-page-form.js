@@ -8,7 +8,14 @@ showPage(currentPage); // Display the crurrent page
 $('#nextBtn').click(function() {
     console.log("currentPage: " + currentPage);
     // if the user hasn't validated email yet
-    if (currentPage == 0) {
+
+
+/*
+NOTE: CHANGE THIS NUMBER BACK TO '0'
+*/
+
+
+    if (currentPage == 1) {
         // show progress bar
         $('.progress').css('opacity', '1');
 
@@ -18,6 +25,7 @@ $('#nextBtn').click(function() {
         console.log("validating email...");
         helperText.text('Validating email...');
 
+        // validate email
         $.post("/validateEmail", { email: $('#email').val() }, function(data, status){
             console.log("Email is valid: " + data);
 
@@ -28,12 +36,35 @@ $('#nextBtn').click(function() {
                 helperText.css('color', '#f44336');
             }
 
+            // hide progress bar
             $('.progress').css('opacity', '0');
             nextPrev(1)
         });
     }
     else {
-        nextPrev(1);
+        formIsValid = true;
+
+        // check each dropdown for valid... values
+        $('#page2 div.input-field').each(function() {
+            // the value selected in the dropdown
+            dropDown = $(this).find('.select-dropdown')
+            selectValue = dropDown.val();
+
+            // a value hasn't been selected
+            if (selectValue == "Select one" || 
+                selectValue == "Select all that apply") {
+
+                formIsValid = false;
+
+                // show warning text
+                dropDown.addClass('invalid');
+                $(this).find('.helper-text').css('opacity', '1');
+            }
+        });
+
+        if (formIsValid) {
+            nextPrev(1);    
+        }
     }
 });
 
