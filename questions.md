@@ -30,12 +30,11 @@
 	* Not at all relevant
 
 6. Which of the following technical tasks are you comfortable doing? (Select all that apply.)
-	* Typing a paper
+	* Typing a paper in Word
 	* Using a classroom projector
 	* Compiling and running Java code
-	* Using a printer
+	* Using the printers in Fondren
 	* Buying items online
-	* Using 
 	* Python list comprehension
 
 7. 

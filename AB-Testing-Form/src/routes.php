@@ -19,10 +19,10 @@ $app->get('/', function (Request $request, Response $response, array $args) {
 });
 
 $app->post('/postForm', function ($request, $response, $args) {
-    // Sample log message
+    // get the data from the form
     $data = $request->getParsedBody();
 
-    return json_encode($data);
+    return $this->renderer->render($response, 'thankyou.phtml', $args);
 });
 
 // Adapted from: https://github.com/zytzagoo/smtp-validate-email

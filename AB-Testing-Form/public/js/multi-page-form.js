@@ -12,6 +12,7 @@ $('#nextBtn').click(function() {
 
 /*
 NOTE: CHANGE THIS NUMBER BACK TO '0'
+      may need to change curFrom =
 */
 
 
@@ -44,8 +45,11 @@ NOTE: CHANGE THIS NUMBER BACK TO '0'
     else {
         formIsValid = true;
 
+        // calculate form based off page
+        curForm = "#page" + currentPage + " div.input-field";
+
         // check each dropdown for valid... values
-        $('#page2 div.input-field').each(function() {
+        $(curForm).each(function() {
             // the value selected in the dropdown
             dropDown = $(this).find('.select-dropdown')
             selectValue = dropDown.val();
@@ -62,16 +66,12 @@ NOTE: CHANGE THIS NUMBER BACK TO '0'
             }
         });
 
+        // form is valid, go to the next page
         if (formIsValid) {
             nextPrev(1);    
         }
     }
 });
-
-// email validation
-function validateEmail() {
-    
-}
 
 function showPage(n) {
     // This function will display the specified page of the form...
