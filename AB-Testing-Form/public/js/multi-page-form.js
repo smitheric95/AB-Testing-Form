@@ -1,6 +1,7 @@
 /*
     Logic for multi-page form
-    https://www.w3schools.com/howto/howto_js_form_steps.asp
+    
+    Adapted from: https://www.w3schools.com/howto/howto_js_form_steps.asp
 */
 var currentPage = 0; // Current page is first page
 showPage(currentPage); // Display the crurrent page

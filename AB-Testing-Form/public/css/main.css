@@ -12,6 +12,12 @@
 	opacity: 0;
 }
 
+h2 {
+	padding-left: 30px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
 h5 {
 	margin-left: 10px;
 }
@@ -28,5 +34,14 @@ body {
 }
 
 .section {
-	margin-bottom: 50px;
+	padding-left: 30px;
+}
+
+.divider {
+	margin-bottom: 30px;
+}
+
+.heading-divider {
+	height:5px;
+	background-color: #eee;
 }
