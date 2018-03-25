@@ -12,16 +12,21 @@
 	opacity: 0;
 }
 
-h6 {
+h5 {
 	margin-left: 10px;
 }
 
-.row {
-	margin: 30px;
+.container {
 	background-color: #f9f9f9;
-	padding: 15px;
+	padding: 25px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 body {
 	background-color: #eee;
+}
+
+.section {
+	margin-bottom: 50px;
 }
