@@ -7,6 +7,7 @@ TODO:
 	- sass input.scss output.css
 	- make a few different sass tylesheets, choose a random one w jquery
 
+- collect info on time to complete
 - check for smu email only
 	- still buggy - test on vagrant
 - check to see if email has been used
