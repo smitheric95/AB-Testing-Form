@@ -37,7 +37,7 @@ $app->post('/validateEmail', function ($request, $response, $args) {
 	$validator = new SmtpEmailValidator($email, $sender);
 	
 	// If debug mode is turned on, logged data is printed as it happens:
-	// $validator->debug = true;
+	$validator->debug = true;
 
 	$results   = $validator->validate();
 	

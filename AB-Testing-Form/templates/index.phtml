@@ -48,20 +48,23 @@ $(document).ready(function(){
 		<input id="computerButtonClicked" type="hidden" name="computerButtonClicked" value="0"/>
 		<input id="timeToComplete" type="hidden" name="timeToComplete" value="0"/>
 
-        <div class="page" id="page1">            
+        <div class="page" id="page1">           
 		    <div class="row">
-				<div class="progress">
-					<div class="indeterminate"></div>
+		    	<div class="col s12 m8">
+					<h6>Welcome to the <b>2018 Student Technology Survey</b>. This form is for <i>students</i> to communicate their overall technical literacy. Please answer all questions as truthfully as possible. <br><br>In order to be selected for a Starbucks giftcard, you'll need to begin by providing your SMU email.</h6><br><br>
 				</div>
-            </div>	
-            
-		    <div class="row">
                 <div class="input-field col s12 m8">
                     <input id="email" name="email" type="email" class="validate" required>
                     <label for="email">Email</label>
                     <span class="helper-text">Please enter a valid SMU email.</span>
                 </div>
+                <div class="row">
+                	<div class="col progress s7">
+						<div class="indeterminate"></div>
+					</div>
+				</div>
             </div>
+            
         </div> <!-- end page 1 -->
 
 		<div class="page" id="page2">
