@@ -17,17 +17,24 @@
 <script src="/../js/main.js"></script>
 
 <!-- random theme: inherited from materialize.css -->
-<!-- <link rel="stylesheet" type="text/css" href="/css/theme_one.css"/> -->
-<link rel="stylesheet" type="text/css" href="/css/theme_two.css"/>
+<link id="pageStyle" rel="stylesheet" type="text/css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/css/theme_two.css"/> -->
 <!-- <link rel="stylesheet" type="text/css" href="/css/theme_three.css"/> -->
 <!-- <link rel="stylesheet" type="text/css" href="/css/theme_four.css"/> -->
 
-
+<!--  -->
 <!-- main stylesheet -->
 <link rel="stylesheet" type="text/css" href="/css/main.css"/>
 
 <script>
 $(document).ready(function(){
+	// load random stylesheet
+	randomNum = Math.floor((Math.random() * 4));
+	fileNames = ["/css/theme_one.css", "/css/theme_two.css", "/css/theme_three.css" ,"/css/theme_four.css"];
+
+	$('#pageStyle').attr('href', fileNames[randomNum]);
+
+	 href="/css/theme_one.css"
 	// initialize select form elements
 	$('select').formSelect();
 
