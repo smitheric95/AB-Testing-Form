@@ -1,0 +1,54 @@
+/*
+
+Theme Three: red and light blue
+
+Red: #f44336
+Light blue: #03a9f4
+
+*/
+
+@import 'materialize';
+
+.heading, #nextBtn {
+	@extend .red;
+}
+
+label:not(.email-label) {
+	@extend .light-blue-text;
+}
+
+span.helper-text {
+	@extend .red-text;
+}
+
+#email:focus, input.select-dropdown:focus {
+	border-bottom-color: #03a9f4 !important; 
+	box-shadow: 0 1px 0 0 #03a9f4 !important; ;
+}
+
+#email.invalid, input.select-dropdown.invalid {
+	border-bottom-color: #f44336 !important; 
+	box-shadow: 0 1px 0 0 #f44336 !important;	
+}
+
+#email.invalid + label {
+	// @extend .red-text;
+	// @extend .light-blue-text;
+}
+
+.email-label.active {
+	color: #03a9f4 !important;
+}
+
+ul.select-dropdown > li:not(.disabled) > span {
+	// @extend .red-text;
+	@extend .light-blue-text;
+}
+
+#computer-button {
+	@extend .light-blue;
+}
+
+h5 > span {
+	@extend .light-blue-text;
+}
