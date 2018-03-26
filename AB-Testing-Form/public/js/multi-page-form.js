@@ -3,9 +3,11 @@
     
     Adapted from: https://www.w3schools.com/howto/howto_js_form_steps.asp
 */
+
 var currentPage = 0; // Current page is first page
 showPage(currentPage); // Display the crurrent page
-timeStarted = 0; // When the user startd the form
+var timeStarted = 0; // When the user startd the form
+
 
 // when the "next" button is clicked, go to the next page
 $('#nextBtn').click(function() {
@@ -30,7 +32,7 @@ $('#nextBtn').click(function() {
             if (data != "true") {
                 $('#email').addClass("invalid");
                 helperText.text('Please enter a valid SMU email.');
-                helperText.css('color', '#f44336');
+                helperText.css('opacity', '1');
             }
 
             // hide progress bar
@@ -60,7 +62,7 @@ $('#nextBtn').click(function() {
 
                 // show warning text
                 dropDown.addClass('invalid');
-                $(this).find('.helper-text').css('opacity', '1');
+                $(this).find('.helper-text').css({'opacity' : '1'});
             }
         });
 

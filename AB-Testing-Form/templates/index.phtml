@@ -17,7 +17,11 @@
 <script src="/../js/main.js"></script>
 
 <!-- random theme: inherited from materialize.css -->
-<link rel="stylesheet" type="text/css" href="/css/theme_one.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/css/theme_one.css"/> -->
+<!-- <link rel="stylesheet" type="text/css" href="/css/theme_two.css"/> -->
+<link rel="stylesheet" type="text/css" href="/css/theme_three.css"/>
+
+
 <!-- main stylesheet -->
 <link rel="stylesheet" type="text/css" href="/css/main.css"/>
 
@@ -41,10 +45,12 @@ $(document).ready(function(){
 <div class="container z-depth-2">
 	<div class="row heading">
 		<h3>SMU Technology Survey</h3>
-		<a id="computer-button" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">desktop_mac</i></a>
+		<a id="computer-button" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">desktop_mac</i></a>
 	</div>
 	<form id="mainForm" action="/postForm" method="POST" class="col s12">
+		
 		<!-- hidden form values for additional user info -->
+		<input id="themeChosen" type="hidden" name="themeChosen" value="0"></input>
 		<input id="computerButtonClicked" type="hidden" name="computerButtonClicked" value="0"/>
 		<input id="timeToComplete" type="hidden" name="timeToComplete" value="0"/>
 
@@ -55,7 +61,7 @@ $(document).ready(function(){
 				</div>
                 <div class="input-field col s12 m8">
                     <input id="email" name="email" type="email" class="validate" required>
-                    <label for="email">Email</label>
+                    <label class="email-label" for="email">Email</label>
                     <span class="helper-text">Please enter a valid SMU email.</span>
                 </div>
                 <div class="row">
@@ -293,7 +299,7 @@ $(document).ready(function(){
 		    
 		    <div class="divider"></div>
 		    <div class="row section">
-		        <h5><span>4.</span>How frustrated or discouraged were you while completing this form?  </h5>
+		        <h5><span>4.</span>How frustrated or confused were you while completing this form?  </h5>
 		        <div class="input-field col s12 m8">
 		            <select name="3.4">
 		                <option value="" disabled selected>Select one</option>

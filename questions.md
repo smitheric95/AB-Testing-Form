@@ -78,7 +78,7 @@
 3. How many questions did you find difficult to answer?
 	* All, some, none
 
-4. How frustrated or discouraged were you while completing this form?
+4. How frustrated or confused were you while completing this form?
 	* Very, somewhat, not at all
 
 5. How happy were you completing this form?

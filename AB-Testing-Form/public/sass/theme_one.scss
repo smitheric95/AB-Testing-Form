@@ -1,5 +1,18 @@
+/*
+
+Theme One: teal and red
+
+Teal: #26a69a
+Red: #F44336
+
+*/
+
 @import 'materialize';
 
-.custom_btn {
-	@extend .red, .lighten-4;
+#computer-button {
+	@extend .red;
+}
+
+span.helper-text {
+	@extend .red-text;
 }

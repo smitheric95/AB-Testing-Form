@@ -9,11 +9,14 @@ TODO:
 - check to see if email has been used
 - buy .com domain
 - make different themes
-
-
+- search for color in html and js and main (retest theme one)
+- style loading animation
+- "please fill out all fields" message at the top
+- test time again after adding 'var' to line 9 in js file
 
 commands:
 - php -S localhost:8080 -t public public/index.php
+- sass --watch sass/:css/
 - composer require zytzagoo/smtp-validate-email --update-no-dev 
 
 
