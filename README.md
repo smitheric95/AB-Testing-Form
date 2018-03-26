@@ -10,7 +10,6 @@ TODO:
 - buy .com domain
 - make different themes
 - search for color in html and js and main (retest theme one)
-- style loading animation
 - "please fill out all fields" message at the top
 - test time again after adding 'var' to line 9 in js file
 - keep people from seeing color change when they refresh

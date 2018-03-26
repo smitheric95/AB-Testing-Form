@@ -35,8 +35,6 @@ $('#nextBtn').click(function() {
                 helperText.css('opacity', '1');
             }
 
-            // hide progress bar
-            $('.progress').css('opacity', '0');
             nextPrev(1)
         });
     }
