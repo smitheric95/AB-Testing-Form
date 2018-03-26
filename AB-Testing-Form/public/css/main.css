@@ -3,6 +3,16 @@
 */
 
 
+* { /* disable highlighting */
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 /* Hide all steps by default: */
 .page {
   display: none;
@@ -18,7 +28,7 @@ h2 {
 	margin-bottom: 30px;
 }*/
 
-h5 {
+h5, h6 {
 	margin-left: 10px;
 }
 

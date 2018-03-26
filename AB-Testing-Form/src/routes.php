@@ -22,7 +22,7 @@ $app->post('/postForm', function ($request, $response, $args) {
     // get the data from the form
     $data = $request->getParsedBody();
 
-    echo "<pre>";var_dump($data);echo "</pre>";
+    // echo "<pre>";var_dump($data);echo "</pre>";
 
     return $this->renderer->render($response, 'thankyou.phtml', $args);
 });
@@ -37,7 +37,7 @@ $app->post('/validateEmail', function ($request, $response, $args) {
 	$validator = new SmtpEmailValidator($email, $sender);
 	
 	// If debug mode is turned on, logged data is printed as it happens:
-	$validator->debug = true;
+	// $validator->debug = true;
 
 	$results   = $validator->validate();
 	

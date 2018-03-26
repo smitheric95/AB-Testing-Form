@@ -3,18 +3,16 @@
 TODO:
 - set up vagrant 
 	- vagrant will have to run sass?
-	- python script to check database and write sass?
-	- sass input.scss output.css
-	- make a few different sass tylesheets, choose a random one w jquery
-
-- collect info on time to complete
-- switch heading to roboto font
+- make a few different sass tylesheets, choose a random one w jquery
 - check for smu email only
 	- still buggy - test on vagrant
 - check to see if email has been used
 - buy .com domain
-	- change email button
 - make different themes
+
+
+
+commands:
 - php -S localhost:8080 -t public public/index.php
 - composer require zytzagoo/smtp-validate-email --update-no-dev 
 

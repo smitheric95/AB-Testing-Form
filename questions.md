@@ -73,7 +73,7 @@
 	* Not very rushed
 	* Not at all rushed
 
-2. How mentally demanding was filling out this task?
+2. How mentally demanding was filling out this form?
 
 3. How many questions did you find difficult to answer?
 	* All, some, none
