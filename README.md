@@ -3,7 +3,7 @@
 TODO:
 - set up vagrant 
 	- vagrant will have to run sass?
-- make a few different sass tylesheets, choose a random one w jquery
+- choose a random stylesheet w jquery
 - check for smu email only
 	- still buggy - test on vagrant
 - check to see if email has been used
@@ -13,6 +13,7 @@ TODO:
 - style loading animation
 - "please fill out all fields" message at the top
 - test time again after adding 'var' to line 9 in js file
+- keep people from seeing color change when they refresh
 
 commands:
 - php -S localhost:8080 -t public public/index.php

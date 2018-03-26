@@ -1,9 +1,9 @@
 /*
 
-Theme Three: red and light blue
+Theme Four: yellow and purple accent-2
 
-Red: #f44336
-Light blue: #03a9f4
+Yellow: #ffeb3b
+purple accent-2 #e040fb
 
 */
 .materialize-red {
@@ -66,88 +66,88 @@ Light blue: #03a9f4
 .materialize-red-text.text-darken-4 {
   color: #8b1014 !important; }
 
-.red, .heading, #nextBtn {
+.red {
   background-color: #F44336 !important; }
 
-.red-text, span.helper-text {
+.red-text {
   color: #F44336 !important; }
 
-.red.lighten-5, .lighten-5.heading, .lighten-5#nextBtn {
+.red.lighten-5 {
   background-color: #FFEBEE !important; }
 
-.red-text.text-lighten-5, span.text-lighten-5.helper-text {
+.red-text.text-lighten-5 {
   color: #FFEBEE !important; }
 
-.red.lighten-4, .lighten-4.heading, .lighten-4#nextBtn {
+.red.lighten-4 {
   background-color: #FFCDD2 !important; }
 
-.red-text.text-lighten-4, span.text-lighten-4.helper-text {
+.red-text.text-lighten-4 {
   color: #FFCDD2 !important; }
 
-.red.lighten-3, .lighten-3.heading, .lighten-3#nextBtn {
+.red.lighten-3 {
   background-color: #EF9A9A !important; }
 
-.red-text.text-lighten-3, span.text-lighten-3.helper-text {
+.red-text.text-lighten-3 {
   color: #EF9A9A !important; }
 
-.red.lighten-2, .lighten-2.heading, .lighten-2#nextBtn {
+.red.lighten-2 {
   background-color: #E57373 !important; }
 
-.red-text.text-lighten-2, span.text-lighten-2.helper-text {
+.red-text.text-lighten-2 {
   color: #E57373 !important; }
 
-.red.lighten-1, .lighten-1.heading, .lighten-1#nextBtn {
+.red.lighten-1 {
   background-color: #EF5350 !important; }
 
-.red-text.text-lighten-1, span.text-lighten-1.helper-text {
+.red-text.text-lighten-1 {
   color: #EF5350 !important; }
 
-.red.darken-1, .darken-1.heading, .darken-1#nextBtn {
+.red.darken-1 {
   background-color: #E53935 !important; }
 
-.red-text.text-darken-1, span.text-darken-1.helper-text {
+.red-text.text-darken-1 {
   color: #E53935 !important; }
 
-.red.darken-2, .darken-2.heading, .darken-2#nextBtn {
+.red.darken-2 {
   background-color: #D32F2F !important; }
 
-.red-text.text-darken-2, span.text-darken-2.helper-text {
+.red-text.text-darken-2 {
   color: #D32F2F !important; }
 
-.red.darken-3, .darken-3.heading, .darken-3#nextBtn {
+.red.darken-3 {
   background-color: #C62828 !important; }
 
-.red-text.text-darken-3, span.text-darken-3.helper-text {
+.red-text.text-darken-3 {
   color: #C62828 !important; }
 
-.red.darken-4, .darken-4.heading, .darken-4#nextBtn {
+.red.darken-4 {
   background-color: #B71C1C !important; }
 
-.red-text.text-darken-4, span.text-darken-4.helper-text {
+.red-text.text-darken-4 {
   color: #B71C1C !important; }
 
-.red.accent-1, .accent-1.heading, .accent-1#nextBtn {
+.red.accent-1 {
   background-color: #FF8A80 !important; }
 
-.red-text.text-accent-1, span.text-accent-1.helper-text {
+.red-text.text-accent-1 {
   color: #FF8A80 !important; }
 
-.red.accent-2, .accent-2.heading, .accent-2#nextBtn {
+.red.accent-2, .red.heading {
   background-color: #FF5252 !important; }
 
-.red-text.text-accent-2, span.text-accent-2.helper-text {
+.red-text.text-accent-2, label.red-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.red-text, h5 > span.red-text {
   color: #FF5252 !important; }
 
-.red.accent-3, .accent-3.heading, .accent-3#nextBtn {
+.red.accent-3 {
   background-color: #FF1744 !important; }
 
-.red-text.text-accent-3, span.text-accent-3.helper-text {
+.red-text.text-accent-3 {
   color: #FF1744 !important; }
 
-.red.accent-4, .accent-4.heading, .accent-4#nextBtn {
+.red.accent-4 {
   background-color: #D50000 !important; }
 
-.red-text.text-accent-4, span.text-accent-4.helper-text {
+.red-text.text-accent-4 {
   color: #D50000 !important; }
 
 .pink {
@@ -216,10 +216,10 @@ Light blue: #03a9f4
 .pink-text.text-accent-1 {
   color: #ff80ab !important; }
 
-.pink.accent-2 {
+.pink.accent-2, .pink.heading {
   background-color: #ff4081 !important; }
 
-.pink-text.text-accent-2 {
+.pink-text.text-accent-2, label.pink-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.pink-text, h5 > span.pink-text {
   color: #ff4081 !important; }
 
 .pink.accent-3 {
@@ -234,88 +234,88 @@ Light blue: #03a9f4
 .pink-text.text-accent-4 {
   color: #c51162 !important; }
 
-.purple {
+.purple, .heading {
   background-color: #9c27b0 !important; }
 
-.purple-text {
+.purple-text, label:not(.email-label), ul.select-dropdown > li:not(.disabled) > span, h5 > span {
   color: #9c27b0 !important; }
 
-.purple.lighten-5 {
+.purple.lighten-5, .lighten-5.heading {
   background-color: #f3e5f5 !important; }
 
-.purple-text.text-lighten-5 {
+.purple-text.text-lighten-5, label.text-lighten-5:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-5, h5 > span.text-lighten-5 {
   color: #f3e5f5 !important; }
 
-.purple.lighten-4 {
+.purple.lighten-4, .lighten-4.heading {
   background-color: #e1bee7 !important; }
 
-.purple-text.text-lighten-4 {
+.purple-text.text-lighten-4, label.text-lighten-4:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-4, h5 > span.text-lighten-4 {
   color: #e1bee7 !important; }
 
-.purple.lighten-3 {
+.purple.lighten-3, .lighten-3.heading {
   background-color: #ce93d8 !important; }
 
-.purple-text.text-lighten-3 {
+.purple-text.text-lighten-3, label.text-lighten-3:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-3, h5 > span.text-lighten-3 {
   color: #ce93d8 !important; }
 
-.purple.lighten-2 {
+.purple.lighten-2, .lighten-2.heading {
   background-color: #ba68c8 !important; }
 
-.purple-text.text-lighten-2 {
+.purple-text.text-lighten-2, label.text-lighten-2:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-2, h5 > span.text-lighten-2 {
   color: #ba68c8 !important; }
 
-.purple.lighten-1 {
+.purple.lighten-1, .lighten-1.heading {
   background-color: #ab47bc !important; }
 
-.purple-text.text-lighten-1 {
+.purple-text.text-lighten-1, label.text-lighten-1:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-1, h5 > span.text-lighten-1 {
   color: #ab47bc !important; }
 
-.purple.darken-1 {
+.purple.darken-1, .darken-1.heading {
   background-color: #8e24aa !important; }
 
-.purple-text.text-darken-1 {
+.purple-text.text-darken-1, label.text-darken-1:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-darken-1, h5 > span.text-darken-1 {
   color: #8e24aa !important; }
 
-.purple.darken-2 {
+.purple.darken-2, .darken-2.heading {
   background-color: #7b1fa2 !important; }
 
-.purple-text.text-darken-2 {
+.purple-text.text-darken-2, label.text-darken-2:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-darken-2, h5 > span.text-darken-2 {
   color: #7b1fa2 !important; }
 
-.purple.darken-3 {
+.purple.darken-3, .darken-3.heading {
   background-color: #6a1b9a !important; }
 
-.purple-text.text-darken-3 {
+.purple-text.text-darken-3, label.text-darken-3:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-darken-3, h5 > span.text-darken-3 {
   color: #6a1b9a !important; }
 
-.purple.darken-4 {
+.purple.darken-4, .darken-4.heading {
   background-color: #4a148c !important; }
 
-.purple-text.text-darken-4 {
+.purple-text.text-darken-4, label.text-darken-4:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-darken-4, h5 > span.text-darken-4 {
   color: #4a148c !important; }
 
-.purple.accent-1 {
+.purple.accent-1, .accent-1.heading {
   background-color: #ea80fc !important; }
 
-.purple-text.text-accent-1 {
+.purple-text.text-accent-1, label.text-accent-1:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-accent-1, h5 > span.text-accent-1 {
   color: #ea80fc !important; }
 
-.purple.accent-2 {
+.purple.accent-2, .heading {
   background-color: #e040fb !important; }
 
-.purple-text.text-accent-2 {
+.purple-text.text-accent-2, label:not(.email-label), ul.select-dropdown > li:not(.disabled) > span, h5 > span {
   color: #e040fb !important; }
 
-.purple.accent-3 {
+.purple.accent-3, .accent-3.heading {
   background-color: #d500f9 !important; }
 
-.purple-text.text-accent-3 {
+.purple-text.text-accent-3, label.text-accent-3:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-accent-3, h5 > span.text-accent-3 {
   color: #d500f9 !important; }
 
-.purple.accent-4 {
+.purple.accent-4, .accent-4.heading {
   background-color: #aa00ff !important; }
 
-.purple-text.text-accent-4 {
+.purple-text.text-accent-4, label.text-accent-4:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-accent-4, h5 > span.text-accent-4 {
   color: #aa00ff !important; }
 
 .deep-purple {
@@ -384,10 +384,10 @@ Light blue: #03a9f4
 .deep-purple-text.text-accent-1 {
   color: #b388ff !important; }
 
-.deep-purple.accent-2 {
+.deep-purple.accent-2, .deep-purple.heading {
   background-color: #7c4dff !important; }
 
-.deep-purple-text.text-accent-2 {
+.deep-purple-text.text-accent-2, label.deep-purple-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.deep-purple-text, h5 > span.deep-purple-text {
   color: #7c4dff !important; }
 
 .deep-purple.accent-3 {
@@ -468,10 +468,10 @@ Light blue: #03a9f4
 .indigo-text.text-accent-1 {
   color: #8c9eff !important; }
 
-.indigo.accent-2 {
+.indigo.accent-2, .indigo.heading {
   background-color: #536dfe !important; }
 
-.indigo-text.text-accent-2 {
+.indigo-text.text-accent-2, label.indigo-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.indigo-text, h5 > span.indigo-text {
   color: #536dfe !important; }
 
 .indigo.accent-3 {
@@ -552,10 +552,10 @@ Light blue: #03a9f4
 .blue-text.text-accent-1 {
   color: #82B1FF !important; }
 
-.blue.accent-2 {
+.blue.accent-2, .blue.heading {
   background-color: #448AFF !important; }
 
-.blue-text.text-accent-2 {
+.blue-text.text-accent-2, label.blue-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.blue-text, h5 > span.blue-text {
   color: #448AFF !important; }
 
 .blue.accent-3 {
@@ -570,88 +570,88 @@ Light blue: #03a9f4
 .blue-text.text-accent-4 {
   color: #2962FF !important; }
 
-.light-blue, #computer-button {
+.light-blue {
   background-color: #03a9f4 !important; }
 
-.light-blue-text, label:not(.email-label), ul.select-dropdown > li:not(.disabled) > span, h5 > span {
+.light-blue-text {
   color: #03a9f4 !important; }
 
-.light-blue.lighten-5, .lighten-5#computer-button {
+.light-blue.lighten-5 {
   background-color: #e1f5fe !important; }
 
-.light-blue-text.text-lighten-5, label.text-lighten-5:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-5, h5 > span.text-lighten-5 {
+.light-blue-text.text-lighten-5 {
   color: #e1f5fe !important; }
 
-.light-blue.lighten-4, .lighten-4#computer-button {
+.light-blue.lighten-4 {
   background-color: #b3e5fc !important; }
 
-.light-blue-text.text-lighten-4, label.text-lighten-4:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-4, h5 > span.text-lighten-4 {
+.light-blue-text.text-lighten-4 {
   color: #b3e5fc !important; }
 
-.light-blue.lighten-3, .lighten-3#computer-button {
+.light-blue.lighten-3 {
   background-color: #81d4fa !important; }
 
-.light-blue-text.text-lighten-3, label.text-lighten-3:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-3, h5 > span.text-lighten-3 {
+.light-blue-text.text-lighten-3 {
   color: #81d4fa !important; }
 
-.light-blue.lighten-2, .lighten-2#computer-button {
+.light-blue.lighten-2 {
   background-color: #4fc3f7 !important; }
 
-.light-blue-text.text-lighten-2, label.text-lighten-2:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-2, h5 > span.text-lighten-2 {
+.light-blue-text.text-lighten-2 {
   color: #4fc3f7 !important; }
 
-.light-blue.lighten-1, .lighten-1#computer-button {
+.light-blue.lighten-1 {
   background-color: #29b6f6 !important; }
 
-.light-blue-text.text-lighten-1, label.text-lighten-1:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-1, h5 > span.text-lighten-1 {
+.light-blue-text.text-lighten-1 {
   color: #29b6f6 !important; }
 
-.light-blue.darken-1, .darken-1#computer-button {
+.light-blue.darken-1 {
   background-color: #039be5 !important; }
 
-.light-blue-text.text-darken-1, label.text-darken-1:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-darken-1, h5 > span.text-darken-1 {
+.light-blue-text.text-darken-1 {
   color: #039be5 !important; }
 
-.light-blue.darken-2, .darken-2#computer-button {
+.light-blue.darken-2 {
   background-color: #0288d1 !important; }
 
-.light-blue-text.text-darken-2, label.text-darken-2:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-darken-2, h5 > span.text-darken-2 {
+.light-blue-text.text-darken-2 {
   color: #0288d1 !important; }
 
-.light-blue.darken-3, .darken-3#computer-button {
+.light-blue.darken-3 {
   background-color: #0277bd !important; }
 
-.light-blue-text.text-darken-3, label.text-darken-3:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-darken-3, h5 > span.text-darken-3 {
+.light-blue-text.text-darken-3 {
   color: #0277bd !important; }
 
-.light-blue.darken-4, .darken-4#computer-button {
+.light-blue.darken-4 {
   background-color: #01579b !important; }
 
-.light-blue-text.text-darken-4, label.text-darken-4:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-darken-4, h5 > span.text-darken-4 {
+.light-blue-text.text-darken-4 {
   color: #01579b !important; }
 
-.light-blue.accent-1, .accent-1#computer-button {
+.light-blue.accent-1 {
   background-color: #80d8ff !important; }
 
-.light-blue-text.text-accent-1, label.text-accent-1:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-accent-1, h5 > span.text-accent-1 {
+.light-blue-text.text-accent-1 {
   color: #80d8ff !important; }
 
-.light-blue.accent-2, .accent-2#computer-button {
+.light-blue.accent-2, .light-blue.heading {
   background-color: #40c4ff !important; }
 
-.light-blue-text.text-accent-2, label.text-accent-2:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-accent-2, h5 > span.text-accent-2 {
+.light-blue-text.text-accent-2, label.light-blue-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.light-blue-text, h5 > span.light-blue-text {
   color: #40c4ff !important; }
 
-.light-blue.accent-3, .accent-3#computer-button {
+.light-blue.accent-3 {
   background-color: #00b0ff !important; }
 
-.light-blue-text.text-accent-3, label.text-accent-3:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-accent-3, h5 > span.text-accent-3 {
+.light-blue-text.text-accent-3 {
   color: #00b0ff !important; }
 
-.light-blue.accent-4, .accent-4#computer-button {
+.light-blue.accent-4 {
   background-color: #0091ea !important; }
 
-.light-blue-text.text-accent-4, label.text-accent-4:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-accent-4, h5 > span.text-accent-4 {
+.light-blue-text.text-accent-4 {
   color: #0091ea !important; }
 
 .cyan {
@@ -720,10 +720,10 @@ Light blue: #03a9f4
 .cyan-text.text-accent-1 {
   color: #84ffff !important; }
 
-.cyan.accent-2 {
+.cyan.accent-2, .cyan.heading {
   background-color: #18ffff !important; }
 
-.cyan-text.text-accent-2 {
+.cyan-text.text-accent-2, label.cyan-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.cyan-text, h5 > span.cyan-text {
   color: #18ffff !important; }
 
 .cyan.accent-3 {
@@ -804,10 +804,10 @@ Light blue: #03a9f4
 .teal-text.text-accent-1 {
   color: #a7ffeb !important; }
 
-.teal.accent-2 {
+.teal.accent-2, .teal.heading {
   background-color: #64ffda !important; }
 
-.teal-text.text-accent-2 {
+.teal-text.text-accent-2, label.teal-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.teal-text, h5 > span.teal-text {
   color: #64ffda !important; }
 
 .teal.accent-3 {
@@ -888,10 +888,10 @@ Light blue: #03a9f4
 .green-text.text-accent-1 {
   color: #B9F6CA !important; }
 
-.green.accent-2 {
+.green.accent-2, .green.heading {
   background-color: #69F0AE !important; }
 
-.green-text.text-accent-2 {
+.green-text.text-accent-2, label.green-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.green-text, h5 > span.green-text {
   color: #69F0AE !important; }
 
 .green.accent-3 {
@@ -972,10 +972,10 @@ Light blue: #03a9f4
 .light-green-text.text-accent-1 {
   color: #ccff90 !important; }
 
-.light-green.accent-2 {
+.light-green.accent-2, .light-green.heading {
   background-color: #b2ff59 !important; }
 
-.light-green-text.text-accent-2 {
+.light-green-text.text-accent-2, label.light-green-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.light-green-text, h5 > span.light-green-text {
   color: #b2ff59 !important; }
 
 .light-green.accent-3 {
@@ -1056,10 +1056,10 @@ Light blue: #03a9f4
 .lime-text.text-accent-1 {
   color: #f4ff81 !important; }
 
-.lime.accent-2 {
+.lime.accent-2, .lime.heading {
   background-color: #eeff41 !important; }
 
-.lime-text.text-accent-2 {
+.lime-text.text-accent-2, label.lime-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.lime-text, h5 > span.lime-text {
   color: #eeff41 !important; }
 
 .lime.accent-3 {
@@ -1074,88 +1074,88 @@ Light blue: #03a9f4
 .lime-text.text-accent-4 {
   color: #aeea00 !important; }
 
-.yellow {
+.yellow, #nextBtn, #computer-button {
   background-color: #ffeb3b !important; }
 
-.yellow-text {
+.yellow-text, span.helper-text {
   color: #ffeb3b !important; }
 
-.yellow.lighten-5 {
+.yellow.lighten-5, .lighten-5#nextBtn, .lighten-5#computer-button {
   background-color: #fffde7 !important; }
 
-.yellow-text.text-lighten-5 {
+.yellow-text.text-lighten-5, span.text-lighten-5.helper-text {
   color: #fffde7 !important; }
 
-.yellow.lighten-4 {
+.yellow.lighten-4, .lighten-4#nextBtn, .lighten-4#computer-button {
   background-color: #fff9c4 !important; }
 
-.yellow-text.text-lighten-4 {
+.yellow-text.text-lighten-4, span.text-lighten-4.helper-text {
   color: #fff9c4 !important; }
 
-.yellow.lighten-3 {
+.yellow.lighten-3, .lighten-3#nextBtn, .lighten-3#computer-button {
   background-color: #fff59d !important; }
 
-.yellow-text.text-lighten-3 {
+.yellow-text.text-lighten-3, span.text-lighten-3.helper-text {
   color: #fff59d !important; }
 
-.yellow.lighten-2 {
+.yellow.lighten-2, .lighten-2#nextBtn, .lighten-2#computer-button {
   background-color: #fff176 !important; }
 
-.yellow-text.text-lighten-2 {
+.yellow-text.text-lighten-2, span.text-lighten-2.helper-text {
   color: #fff176 !important; }
 
-.yellow.lighten-1 {
+.yellow.lighten-1, .lighten-1#nextBtn, .lighten-1#computer-button {
   background-color: #ffee58 !important; }
 
-.yellow-text.text-lighten-1 {
+.yellow-text.text-lighten-1, span.text-lighten-1.helper-text {
   color: #ffee58 !important; }
 
-.yellow.darken-1 {
+.yellow.darken-1, .darken-1#nextBtn, .darken-1#computer-button {
   background-color: #fdd835 !important; }
 
-.yellow-text.text-darken-1 {
+.yellow-text.text-darken-1, span.text-darken-1.helper-text {
   color: #fdd835 !important; }
 
-.yellow.darken-2 {
+.yellow.darken-2, .darken-2#nextBtn, .darken-2#computer-button {
   background-color: #fbc02d !important; }
 
-.yellow-text.text-darken-2 {
+.yellow-text.text-darken-2, span.text-darken-2.helper-text {
   color: #fbc02d !important; }
 
-.yellow.darken-3 {
+.yellow.darken-3, .darken-3#nextBtn, .darken-3#computer-button {
   background-color: #f9a825 !important; }
 
-.yellow-text.text-darken-3 {
+.yellow-text.text-darken-3, span.text-darken-3.helper-text {
   color: #f9a825 !important; }
 
-.yellow.darken-4 {
+.yellow.darken-4, .darken-4#nextBtn, .darken-4#computer-button {
   background-color: #f57f17 !important; }
 
-.yellow-text.text-darken-4 {
+.yellow-text.text-darken-4, span.text-darken-4.helper-text {
   color: #f57f17 !important; }
 
-.yellow.accent-1 {
+.yellow.accent-1, .accent-1#nextBtn, .accent-1#computer-button {
   background-color: #ffff8d !important; }
 
-.yellow-text.text-accent-1 {
+.yellow-text.text-accent-1, span.text-accent-1.helper-text {
   color: #ffff8d !important; }
 
-.yellow.accent-2 {
+.yellow.accent-2, .yellow.heading, .heading#nextBtn, .heading#computer-button, .accent-2#nextBtn, .accent-2#computer-button {
   background-color: #ffff00 !important; }
 
-.yellow-text.text-accent-2 {
+.yellow-text.text-accent-2, label.yellow-text:not(.email-label), span.text-accent-2.helper-text, ul.select-dropdown > li:not(.disabled) > span.helper-text, h5 > span.helper-text, ul.select-dropdown > li:not(.disabled) > span.yellow-text, h5 > span.yellow-text {
   color: #ffff00 !important; }
 
-.yellow.accent-3 {
+.yellow.accent-3, .accent-3#nextBtn, .accent-3#computer-button {
   background-color: #ffea00 !important; }
 
-.yellow-text.text-accent-3 {
+.yellow-text.text-accent-3, span.text-accent-3.helper-text {
   color: #ffea00 !important; }
 
-.yellow.accent-4 {
+.yellow.accent-4, .accent-4#nextBtn, .accent-4#computer-button {
   background-color: #ffd600 !important; }
 
-.yellow-text.text-accent-4 {
+.yellow-text.text-accent-4, span.text-accent-4.helper-text {
   color: #ffd600 !important; }
 
 .amber {
@@ -1224,10 +1224,10 @@ Light blue: #03a9f4
 .amber-text.text-accent-1 {
   color: #ffe57f !important; }
 
-.amber.accent-2 {
+.amber.accent-2, .amber.heading {
   background-color: #ffd740 !important; }
 
-.amber-text.text-accent-2 {
+.amber-text.text-accent-2, label.amber-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.amber-text, h5 > span.amber-text {
   color: #ffd740 !important; }
 
 .amber.accent-3 {
@@ -1308,10 +1308,10 @@ Light blue: #03a9f4
 .orange-text.text-accent-1 {
   color: #ffd180 !important; }
 
-.orange.accent-2 {
+.orange.accent-2, .orange.heading {
   background-color: #ffab40 !important; }
 
-.orange-text.text-accent-2 {
+.orange-text.text-accent-2, label.orange-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.orange-text, h5 > span.orange-text {
   color: #ffab40 !important; }
 
 .orange.accent-3 {
@@ -1392,10 +1392,10 @@ Light blue: #03a9f4
 .deep-orange-text.text-accent-1 {
   color: #ff9e80 !important; }
 
-.deep-orange.accent-2 {
+.deep-orange.accent-2, .deep-orange.heading {
   background-color: #ff6e40 !important; }
 
-.deep-orange-text.text-accent-2 {
+.deep-orange-text.text-accent-2, label.deep-orange-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.deep-orange-text, h5 > span.deep-orange-text {
   color: #ff6e40 !important; }
 
 .deep-orange.accent-3 {
@@ -6437,18 +6437,18 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem; } }
 #email:focus, input.select-dropdown:focus {
-  border-bottom-color: #03a9f4 !important;
-  box-shadow: 0 1px 0 0 #03a9f4 !important; }
+  border-bottom-color: #e040fb !important;
+  box-shadow: 0 1px 0 0 #e040fb !important; }
 
 #email.invalid, input.select-dropdown.invalid {
-  border-bottom-color: #f44336 !important;
-  box-shadow: 0 1px 0 0 #f44336 !important; }
+  border-bottom-color: #ffeb3b !important;
+  box-shadow: 0 1px 0 0 #ffeb3b !important; }
 
 #email.valid, input.select-dropdown.valid {
-  border-bottom-color: #03a9f4 !important;
-  box-shadow: 0 1px 0 0 #03a9f4 !important; }
+  border-bottom-color: #e040fb !important;
+  box-shadow: 0 1px 0 0 #e040fb !important; }
 
 .email-label.active {
-  color: #03a9f4 !important; }
+  color: #e040fb !important; }
 
-/*# sourceMappingURL=theme_three.css.map */
+/*# sourceMappingURL=theme_four.css.map */

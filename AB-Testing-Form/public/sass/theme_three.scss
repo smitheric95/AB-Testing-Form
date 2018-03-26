@@ -31,9 +31,9 @@ span.helper-text {
 	box-shadow: 0 1px 0 0 #f44336 !important;	
 }
 
-#email.invalid + label {
-	// @extend .red-text;
-	// @extend .light-blue-text;
+#email.valid, input.select-dropdown.valid {
+	border-bottom-color: #03a9f4 !important; 
+	box-shadow: 0 1px 0 0 #03a9f4 !important;	
 }
 
 .email-label.active {
@@ -41,7 +41,6 @@ span.helper-text {
 }
 
 ul.select-dropdown > li:not(.disabled) > span {
-	// @extend .red-text;
 	@extend .light-blue-text;
 }
 
