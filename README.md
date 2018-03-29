@@ -9,7 +9,6 @@ TODO:
 	- still buggy - test on vagrant
 - check to see if email has been used
 - buy .com domain
-- "please fill out all fields" message at the top
 
 
 commands:
