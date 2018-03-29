@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 	$('#pageStyle').attr('href', fileNames[randomNum]);
 
-	 $('.container').fadeIn();
+	 $('.container').delay(200).fadeIn();
 
 	// initialize select form elements
 	$('select').formSelect();
@@ -82,6 +82,7 @@ $(document).ready(function(){
         </div> <!-- end page 1 -->
 
 		<div class="page" id="page2">
+			<p id="errorMessage2" class="errorMessage">Please complete all fields.</p>
 			<!-- 1 -->
 		    <div class="row section">
 		        <h5><span>1.</span>How often do you use a desktop or laptop computer?  </h5>
@@ -92,7 +93,7 @@ $(document).ready(function(){
 		                <option value="2">Less than 5 hours a day</option>
 		                <option value="3">Not everyday</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -110,7 +111,7 @@ $(document).ready(function(){
 		                <option value="4">I'm not sure.</option>
 		                <option value="5">I don't own a computer. </option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -125,7 +126,7 @@ $(document).ready(function(){
 		                <option value="2">Android</option>
 		                <option value="3">I don't own a smartphone.</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -141,7 +142,7 @@ $(document).ready(function(){
 		                <option value="3">Beginner</option>
 		                <option value="4">I'm not sure</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -158,7 +159,7 @@ $(document).ready(function(){
 		                <option value="3">Not very relevant</option>
 		                <option value="4">Not at all relevant</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -177,15 +178,16 @@ $(document).ready(function(){
 		                <option value="5">Buying items online</option>
 		                <option value="6">Python list comprehension</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
 		</div><!-- end page 2 -->
 
 		<div class="page" id="page3">
+			<p id="errorMessage3" class="errorMessage">Please complete all fields.</p>
+
 			<!-- 1 -->
-		   
 		    <div class="row section">
 		        <h5><span>1.</span>Which school do you attend?  </h5>
 		        <div class="input-field col s12 m8">
@@ -199,7 +201,7 @@ $(document).ready(function(){
 		                <option value="6">Perkins</option>
 		                <option value="7">Simmons</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -215,7 +217,7 @@ $(document).ready(function(){
 		                <option value="2">Graduate</option>
 		                <option value="3">PhD Candidate</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -231,7 +233,7 @@ $(document).ready(function(){
 		                <option value="2">Female</option>
 		                <option value="3">Other</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -248,14 +250,16 @@ $(document).ready(function(){
 		                <option value="3">23-25</option>
 		                <option value="4">25+</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 		</div><!-- end page 3 -->
 
-		<!-- 1 -->
+		
 		<div class="page" id="page4">
-		    
+		    <p id="errorMessage4" class="errorMessage">Please complete all fields.</p>
+
+		    <!-- 1 -->
 		    <div class="row section">
 		        <h5><span>1.</span>How rushed did you feel while competing this form?  </h5>
 		        <div class="input-field col s12 m8">
@@ -266,7 +270,7 @@ $(document).ready(function(){
 		                <option value="3">Not very rushed</option>
 		                <option value="4">Not at all rushed</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -283,7 +287,7 @@ $(document).ready(function(){
 		                <option value="3">Not very demanding</option>
 		                <option value="4">Not at all demanding</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -299,7 +303,7 @@ $(document).ready(function(){
 		                <option value="2">A few questions</option>
 		                <option value="3">No questions</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -316,7 +320,7 @@ $(document).ready(function(){
 		                <option value="3">Not very frustrated</option>
 		                <option value="4">Not at all frustrated</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -333,7 +337,7 @@ $(document).ready(function(){
 		                <option value="3">Neutral </option>
 		                <option value="4">Unhappy</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -350,7 +354,7 @@ $(document).ready(function(){
 		                <option value="3">Not very likely</option>
 		                <option value="4">Not at all likely</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 
@@ -366,7 +370,7 @@ $(document).ready(function(){
 		                <option value="2">What school do you attend?</option>
 		                <option value="3">How technologically savy are you?</option>
 		            </select>
-		            <span style="opacity:0;color:#f44336;" class="helper-text">Please select an option.</span>
+		            <span style="opacity:0;" class="helper-text">Please select an option.</span>
 		        </div>
 		    </div>
 		</div><!-- end page 4 -->

@@ -57,3 +57,7 @@ h5 > span {
 	border-right: 2px solid #ff4081;
 	border-bottom: 2px solid #ff4081;
 }
+
+.errorMessage {
+	@extend .pink-text;	
+}

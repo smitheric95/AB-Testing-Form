@@ -5,16 +5,12 @@ TODO:
 	- vagrant will have to run sass?
 
 - block more than 5 invalid attempts
-- check for smu email only
+- check for smu email only - in php
 	- still buggy - test on vagrant
 - check to see if email has been used
-- checkmark colors
 - buy .com domain
-- make different themes
-- search for color in html and js and main (retest theme one)
 - "please fill out all fields" message at the top
-- test time again after adding 'var' to line 9 in js file
-- keep people from seeing color change when they refresh
+
 
 commands:
 - php -S localhost:8080 -t public public/index.php

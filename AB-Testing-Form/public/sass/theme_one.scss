@@ -16,3 +16,7 @@ Red: #F44336
 span.helper-text {
 	@extend .red-text;
 }
+
+.errorMessage {
+	@extend .red-text;	
+}

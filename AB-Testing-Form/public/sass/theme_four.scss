@@ -61,3 +61,7 @@ h5 > span {
 	border-right: 2px solid #ffeb3b;
 	border-bottom: 2px solid #ffeb3b;
 }
+
+.errorMessage {
+	@extend .yellow-text;	
+}

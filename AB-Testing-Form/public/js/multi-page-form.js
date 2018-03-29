@@ -56,7 +56,6 @@ $('#nextBtn').click(function() {
                 selectValue == "Select all that apply") {
 
                 formIsValid = false;
-                console.log("invalid");
 
                 // show warning text
                 dropDown.addClass('invalid');
@@ -67,6 +66,10 @@ $('#nextBtn').click(function() {
         // form is valid, go to the next page
         if (formIsValid) {
             nextPrev(1);    
+        }
+        else {
+            // show warning text
+            $('#errorMessage' + (currentPage+1)).css('display', 'block');
         }
 
         window.scrollTo(0,0);

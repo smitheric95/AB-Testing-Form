@@ -69,85 +69,85 @@ Red: #F44336
 .red, #computer-button {
   background-color: #F44336 !important; }
 
-.red-text, span.helper-text {
+.red-text, span.helper-text, .errorMessage {
   color: #F44336 !important; }
 
 .red.lighten-5, .lighten-5#computer-button {
   background-color: #FFEBEE !important; }
 
-.red-text.text-lighten-5, span.text-lighten-5.helper-text {
+.red-text.text-lighten-5, span.text-lighten-5.helper-text, .text-lighten-5.errorMessage {
   color: #FFEBEE !important; }
 
 .red.lighten-4, .lighten-4#computer-button {
   background-color: #FFCDD2 !important; }
 
-.red-text.text-lighten-4, span.text-lighten-4.helper-text {
+.red-text.text-lighten-4, span.text-lighten-4.helper-text, .text-lighten-4.errorMessage {
   color: #FFCDD2 !important; }
 
 .red.lighten-3, .lighten-3#computer-button {
   background-color: #EF9A9A !important; }
 
-.red-text.text-lighten-3, span.text-lighten-3.helper-text {
+.red-text.text-lighten-3, span.text-lighten-3.helper-text, .text-lighten-3.errorMessage {
   color: #EF9A9A !important; }
 
 .red.lighten-2, .lighten-2#computer-button {
   background-color: #E57373 !important; }
 
-.red-text.text-lighten-2, span.text-lighten-2.helper-text {
+.red-text.text-lighten-2, span.text-lighten-2.helper-text, .text-lighten-2.errorMessage {
   color: #E57373 !important; }
 
 .red.lighten-1, .lighten-1#computer-button {
   background-color: #EF5350 !important; }
 
-.red-text.text-lighten-1, span.text-lighten-1.helper-text {
+.red-text.text-lighten-1, span.text-lighten-1.helper-text, .text-lighten-1.errorMessage {
   color: #EF5350 !important; }
 
 .red.darken-1, .darken-1#computer-button {
   background-color: #E53935 !important; }
 
-.red-text.text-darken-1, span.text-darken-1.helper-text {
+.red-text.text-darken-1, span.text-darken-1.helper-text, .text-darken-1.errorMessage {
   color: #E53935 !important; }
 
 .red.darken-2, .darken-2#computer-button {
   background-color: #D32F2F !important; }
 
-.red-text.text-darken-2, span.text-darken-2.helper-text {
+.red-text.text-darken-2, span.text-darken-2.helper-text, .text-darken-2.errorMessage {
   color: #D32F2F !important; }
 
 .red.darken-3, .darken-3#computer-button {
   background-color: #C62828 !important; }
 
-.red-text.text-darken-3, span.text-darken-3.helper-text {
+.red-text.text-darken-3, span.text-darken-3.helper-text, .text-darken-3.errorMessage {
   color: #C62828 !important; }
 
 .red.darken-4, .darken-4#computer-button {
   background-color: #B71C1C !important; }
 
-.red-text.text-darken-4, span.text-darken-4.helper-text {
+.red-text.text-darken-4, span.text-darken-4.helper-text, .text-darken-4.errorMessage {
   color: #B71C1C !important; }
 
 .red.accent-1, .accent-1#computer-button {
   background-color: #FF8A80 !important; }
 
-.red-text.text-accent-1, span.text-accent-1.helper-text {
+.red-text.text-accent-1, span.text-accent-1.helper-text, .text-accent-1.errorMessage {
   color: #FF8A80 !important; }
 
 .red.accent-2, .accent-2#computer-button {
   background-color: #FF5252 !important; }
 
-.red-text.text-accent-2, span.text-accent-2.helper-text {
+.red-text.text-accent-2, span.text-accent-2.helper-text, .text-accent-2.errorMessage {
   color: #FF5252 !important; }
 
 .red.accent-3, .accent-3#computer-button {
   background-color: #FF1744 !important; }
 
-.red-text.text-accent-3, span.text-accent-3.helper-text {
+.red-text.text-accent-3, span.text-accent-3.helper-text, .text-accent-3.errorMessage {
   color: #FF1744 !important; }
 
 .red.accent-4, .accent-4#computer-button {
   background-color: #D50000 !important; }
 
-.red-text.text-accent-4, span.text-accent-4.helper-text {
+.red-text.text-accent-4, span.text-accent-4.helper-text, .text-accent-4.errorMessage {
   color: #D50000 !important; }
 
 .pink {

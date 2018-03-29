@@ -92,3 +92,8 @@ h5 > span {
 #email.invalid ~ .helper-text {
 	opacity:1;
 }
+
+.errorMessage {
+	display: none;
+	font-size: 16px;
+}

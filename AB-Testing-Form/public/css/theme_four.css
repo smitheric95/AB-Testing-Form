@@ -1077,85 +1077,85 @@ purple accent-2 #e040fb
 .yellow, #nextBtn, #computer-button {
   background-color: #ffeb3b !important; }
 
-.yellow-text, span.helper-text {
+.yellow-text, span.helper-text, .errorMessage {
   color: #ffeb3b !important; }
 
 .yellow.lighten-5, .lighten-5#nextBtn, .lighten-5#computer-button {
   background-color: #fffde7 !important; }
 
-.yellow-text.text-lighten-5, span.text-lighten-5.helper-text {
+.yellow-text.text-lighten-5, span.text-lighten-5.helper-text, .text-lighten-5.errorMessage {
   color: #fffde7 !important; }
 
 .yellow.lighten-4, .lighten-4#nextBtn, .lighten-4#computer-button {
   background-color: #fff9c4 !important; }
 
-.yellow-text.text-lighten-4, span.text-lighten-4.helper-text {
+.yellow-text.text-lighten-4, span.text-lighten-4.helper-text, .text-lighten-4.errorMessage {
   color: #fff9c4 !important; }
 
 .yellow.lighten-3, .lighten-3#nextBtn, .lighten-3#computer-button {
   background-color: #fff59d !important; }
 
-.yellow-text.text-lighten-3, span.text-lighten-3.helper-text {
+.yellow-text.text-lighten-3, span.text-lighten-3.helper-text, .text-lighten-3.errorMessage {
   color: #fff59d !important; }
 
 .yellow.lighten-2, .lighten-2#nextBtn, .lighten-2#computer-button {
   background-color: #fff176 !important; }
 
-.yellow-text.text-lighten-2, span.text-lighten-2.helper-text {
+.yellow-text.text-lighten-2, span.text-lighten-2.helper-text, .text-lighten-2.errorMessage {
   color: #fff176 !important; }
 
 .yellow.lighten-1, .lighten-1#nextBtn, .lighten-1#computer-button {
   background-color: #ffee58 !important; }
 
-.yellow-text.text-lighten-1, span.text-lighten-1.helper-text {
+.yellow-text.text-lighten-1, span.text-lighten-1.helper-text, .text-lighten-1.errorMessage {
   color: #ffee58 !important; }
 
 .yellow.darken-1, .darken-1#nextBtn, .darken-1#computer-button {
   background-color: #fdd835 !important; }
 
-.yellow-text.text-darken-1, span.text-darken-1.helper-text {
+.yellow-text.text-darken-1, span.text-darken-1.helper-text, .text-darken-1.errorMessage {
   color: #fdd835 !important; }
 
 .yellow.darken-2, .darken-2#nextBtn, .darken-2#computer-button {
   background-color: #fbc02d !important; }
 
-.yellow-text.text-darken-2, span.text-darken-2.helper-text {
+.yellow-text.text-darken-2, span.text-darken-2.helper-text, .text-darken-2.errorMessage {
   color: #fbc02d !important; }
 
 .yellow.darken-3, .darken-3#nextBtn, .darken-3#computer-button {
   background-color: #f9a825 !important; }
 
-.yellow-text.text-darken-3, span.text-darken-3.helper-text {
+.yellow-text.text-darken-3, span.text-darken-3.helper-text, .text-darken-3.errorMessage {
   color: #f9a825 !important; }
 
 .yellow.darken-4, .darken-4#nextBtn, .darken-4#computer-button {
   background-color: #f57f17 !important; }
 
-.yellow-text.text-darken-4, span.text-darken-4.helper-text {
+.yellow-text.text-darken-4, span.text-darken-4.helper-text, .text-darken-4.errorMessage {
   color: #f57f17 !important; }
 
 .yellow.accent-1, .accent-1#nextBtn, .accent-1#computer-button {
   background-color: #ffff8d !important; }
 
-.yellow-text.text-accent-1, span.text-accent-1.helper-text {
+.yellow-text.text-accent-1, span.text-accent-1.helper-text, .text-accent-1.errorMessage {
   color: #ffff8d !important; }
 
 .yellow.accent-2, .yellow.heading, .heading#nextBtn, .heading#computer-button, .accent-2#nextBtn, .accent-2#computer-button {
   background-color: #ffff00 !important; }
 
-.yellow-text.text-accent-2, label.yellow-text:not(.email-label), span.text-accent-2.helper-text, ul.select-dropdown > li:not(.disabled) > span.helper-text, h5 > span.helper-text, ul.select-dropdown > li:not(.disabled) > span.yellow-text, h5 > span.yellow-text {
+.yellow-text.text-accent-2, label.yellow-text:not(.email-label), label.errorMessage:not(.email-label), span.text-accent-2.helper-text, ul.select-dropdown > li:not(.disabled) > span.helper-text, h5 > span.helper-text, ul.select-dropdown > li:not(.disabled) > span.yellow-text, ul.select-dropdown > li:not(.disabled) > span.errorMessage, h5 > span.yellow-text, h5 > span.errorMessage, .text-accent-2.errorMessage {
   color: #ffff00 !important; }
 
 .yellow.accent-3, .accent-3#nextBtn, .accent-3#computer-button {
   background-color: #ffea00 !important; }
 
-.yellow-text.text-accent-3, span.text-accent-3.helper-text {
+.yellow-text.text-accent-3, span.text-accent-3.helper-text, .text-accent-3.errorMessage {
   color: #ffea00 !important; }
 
 .yellow.accent-4, .accent-4#nextBtn, .accent-4#computer-button {
   background-color: #ffd600 !important; }
 
-.yellow-text.text-accent-4, span.text-accent-4.helper-text {
+.yellow-text.text-accent-4, span.text-accent-4.helper-text, .text-accent-4.errorMessage {
   color: #ffd600 !important; }
 
 .amber {
