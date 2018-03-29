@@ -52,3 +52,8 @@ ul.select-dropdown > li:not(.disabled) > span {
 h5 > span {
 	@extend .pink-text, .text-accent-2;
 }
+
+[type="checkbox"]:checked + span:not(.lever)::before {
+	border-right: 2px solid #ff4081;
+	border-bottom: 2px solid #ff4081;
+}

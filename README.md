@@ -3,10 +3,12 @@
 TODO:
 - set up vagrant 
 	- vagrant will have to run sass?
-- choose a random stylesheet w jquery
+
+- block more than 5 invalid attempts
 - check for smu email only
 	- still buggy - test on vagrant
 - check to see if email has been used
+- checkmark colors
 - buy .com domain
 - make different themes
 - search for color in html and js and main (retest theme one)

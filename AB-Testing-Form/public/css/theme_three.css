@@ -6451,4 +6451,8 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .email-label.active {
   color: #03a9f4 !important; }
 
+[type="checkbox"]:checked + span:not(.lever)::before {
+  border-right: 2px solid #f44336;
+  border-bottom: 2px solid #f44336; }
+
 /*# sourceMappingURL=theme_three.css.map */
