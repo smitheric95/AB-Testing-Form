@@ -9,7 +9,7 @@ TODO:
 	- still buggy - test on vagrant
 - check to see if email has been used
 - buy .com domain
-
+- sanitize input for email and post form
 
 commands:
 - php -S localhost:8080 -t public public/index.php
