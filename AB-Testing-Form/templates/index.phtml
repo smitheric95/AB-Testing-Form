@@ -13,9 +13,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <!-- custom JavaScript and CSS -->
 
-<!-- main js file -->
-<script src="/../js/main.js"></script>
-
 <!-- random theme: inherited from materialize.css -->
 <link id="pageStyle" rel="stylesheet" type="text/css"/>
 <!-- <link rel="stylesheet" type="text/css" href="/css/theme_two.css"/> -->
@@ -24,13 +21,13 @@
 
 <!--  -->
 <!-- main stylesheet -->
-<link rel="stylesheet" type="text/css" href="/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="/AB-Testing-Form/public/css/main.css"/>
 
 <script>
 $(document).ready(function(){
 	// load random stylesheet
 	randomNum = Math.floor((Math.random() * 4));
-	fileNames = ["/css/theme_one.css", "/css/theme_two.css", "/css/theme_three.css" ,"/css/theme_four.css"];
+	fileNames = ["/AB-Testing-Form/public/css/theme_one.css", "/AB-Testing-Form/public/css/theme_two.css", "/AB-Testing-Form/public/css/theme_three.css" ,"/AB-Testing-Form/public/css/theme_four.css"];
 
 	$('#pageStyle').attr('href', fileNames[randomNum]);
 
@@ -384,6 +381,6 @@ $(document).ready(function(){
 </div>
 
 <!-- logic for multi-page form behavior -->
-<script src="/../js/multi-page-form.js"></script>
+<script src="/AB-Testing-Form/public/js/multi-page-form.js"></script>
 </body>
 </html>

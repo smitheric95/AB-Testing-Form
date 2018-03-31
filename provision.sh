@@ -105,7 +105,7 @@ else
     fi
 fi
 
-ln -fs "/etc/nginx/sites-available/api.$DOMAIN" "/etc/nginx/sites-enabled/$DOMAIN"
+ln -fs "/etc/nginx/sites-available/$DOMAIN" "/etc/nginx/sites-enabled/$DOMAIN"
 if ! [ -z ${FRONT_END_REPO+x} ]; then
     ln -fs "/etc/nginx/sites-available/$DOMAIN" "/etc/nginx/sites-enabled/$DOMAIN"
 fi
