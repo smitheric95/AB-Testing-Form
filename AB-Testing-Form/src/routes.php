@@ -21,6 +21,10 @@ $app->post('/postForm', function ($request, $response, $args) {
     // get the data from the form
     $data = $request->getParsedBody();
 
+    // remove recaptcha response
+    unset($data['g-recaptcha-response']);
+
+
     $stmt = $this->db->prepare("INSERT INTO `Responses` VALUES (:email, :response)");
 	
 	$stmt->bindValue(':email',$data["email"],PDO::PARAM_STR);
@@ -63,7 +67,6 @@ $app->post('/validateEmail', function ($request, $response, $args) {
 
 	// user is valid
 	if ($response["success"] == true) {
-		
 		// verify email
 		$email = $data[email];
 
@@ -84,7 +87,7 @@ $app->post('/validateEmail', function ($request, $response, $args) {
 			
 			// If debug mode is turned on, logged data is printed as it happens:
 			// $validator->debug = true;
-			
+
 			$results = $validator->validate();
 			$results = json_encode($results[$email]);
 		}

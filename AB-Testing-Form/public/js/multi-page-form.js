@@ -8,6 +8,8 @@ var currentPage = 0; // Current page is first page
 showPage(currentPage); // Display the crurrent page
 var timeStarted = 0; // When the user startd the form
 
+// prevent recaptcha from shitting itself
+alert = function() {};
 
 // when the "next" button is clicked, go to the next page
 $('#nextBtn').click(function() {
@@ -40,8 +42,18 @@ $('#nextBtn').click(function() {
                     helperText.text('This email has already been used or is not a valid SMU email.');
                     helperText.css('opacity', '1');
                 }
+                else {
+                    // remove recaptcha
+                    $('#captcha-button').remove();
+                    $('#nextBtn').removeClass('g-recaptcha');
+                    $('body > div:nth-child(3)').remove();
+                    $('body > div:nth-child(3)').remove();
 
-                nextPrev(1);
+                    // grecaptcha.reset();
+
+                    // email or user are valid!
+                    nextPrev(1);
+                }
             });    
         }
     }
@@ -78,6 +90,14 @@ $('#nextBtn').click(function() {
             // show warning text
             $('#errorMessage' + (currentPage+1)).css('display', 'block');
         }
+
+        // remove recaptcha
+        $('#captcha-button').remove();
+        $('#nextBtn').removeClass('g-recaptcha');
+        $('body > div:nth-child(3)').remove();
+        $('body > div:nth-child(3)').remove();
+
+        // grecaptcha.reset();
 
         window.scrollTo(0,0);
     }

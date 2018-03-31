@@ -9,6 +9,9 @@ TODO:
 - show page even with invalid response
 - add captcha
 - style captcha
+- remove recaptcha resonse if postForm
+- captcha loading animation
+- fix button fullscreen chrome
 
 commands:
 - sass --watch sass/:css/
