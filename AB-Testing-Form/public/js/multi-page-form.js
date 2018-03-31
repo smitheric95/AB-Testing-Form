@@ -35,7 +35,7 @@ $('#nextBtn').click(function() {
                 helperText.css('opacity', '1');
             }
 
-            nextPrev(1)
+            nextPrev(1);
         });
     }
     else {
@@ -48,7 +48,7 @@ $('#nextBtn').click(function() {
         // check each dropdown for valid... values
         $(curForm).each(function() {
             // the value selected in the dropdown
-            dropDown = $(this).find('.select-dropdown')
+            dropDown = $(this).find('.select-dropdown');
             selectValue = dropDown.val();
 
             // a value hasn't been selected
@@ -114,7 +114,7 @@ function nextPrev(n) {
     $(x[n - 1]).find("input").each(function() {
         // the input is invalid or it's empty
         if ($(this).hasClass("invalid") || $(this)[0].value == "") {
-            $(this).addClass("invalid")
+            $(this).addClass("invalid");
             inputsInvalid = true;
         }
     });
@@ -144,24 +144,5 @@ function nextPrev(n) {
         return false;
     }
     // Otherwise, display the correct page:
-    showPage(currentPage);
-}
-
-function validateForm() {
-    // This function deals with validation of the form fields
-    var x, y, i, valid = true;
-    x = document.getElementsByClassName("page");
-    y = x[currentPage].getElementsByTagName("input");
-    // A loop that checks every input field in the current page:
-    for (i = 0; i < y.length; i++) {
-        // If a field is empty...
-        if (y[i].value == "") {
-            // add an "invalid" class to the field:
-            y[i].className += " invalid";
-            // and set the current valid status to false
-            valid = false;
-        }
-    }
-
-    return valid; // return the valid status
+    showPage(currentPage) ;
 }
