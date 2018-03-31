@@ -1,6 +1,7 @@
 .DS_Store
 *.swp
 Vagrantfile
+.vagrant/*
 composer.lock
 composer.phar
 dev_provision.conf
