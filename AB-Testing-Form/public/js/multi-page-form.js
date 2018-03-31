@@ -28,6 +28,7 @@ $('#nextBtn').click(function() {
             // display 'validating email' text
             console.log("validating email...");
             helperText.text('Validating email...');
+            helperText.css('opacity', '1');
 
             // validate email
             $.post("/validateEmail", { 
@@ -85,19 +86,19 @@ $('#nextBtn').click(function() {
         // form is valid, go to the next page
         if (formIsValid) {
             nextPrev(1);    
+
+            // remove recaptcha
+            $('#captcha-button').remove();
+            $('#nextBtn').removeClass('g-recaptcha');
+            $('body > div:nth-child(3)').remove();
+            $('body > div:nth-child(3)').remove();
+
+            // grecaptcha.reset();
         }
         else {
             // show warning text
             $('#errorMessage' + (currentPage+1)).css('display', 'block');
         }
-
-        // remove recaptcha
-        $('#captcha-button').remove();
-        $('#nextBtn').removeClass('g-recaptcha');
-        $('body > div:nth-child(3)').remove();
-        $('body > div:nth-child(3)').remove();
-
-        // grecaptcha.reset();
 
         window.scrollTo(0,0);
     }
