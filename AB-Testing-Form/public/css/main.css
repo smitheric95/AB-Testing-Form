@@ -74,10 +74,25 @@ form {
 }
 
 .btn-floating {
-	position: absolute;
-    right: 16%;
-    margin-top: -30px;
+	    position: relative;
+    top: 20%;
+    margin-bottom: -30px;
+
+    left: 85%;
 }
+
+@media only screen and (max-width: 600px) {
+    .btn-floating {
+        left: 75%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .btn-floating {
+        left: 85%;
+    }
+}
+
 
 h5 > span {
 	/* TODO: change w theme */
