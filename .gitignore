@@ -1,2 +1,9 @@
 .DS_Store
 *.swp
+Vagrantfile
+composer.lock
+composer.phar
+dev_provision.conf
+provision.sh
+smutechsurvey.com
+*.log

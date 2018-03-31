@@ -5,7 +5,7 @@ TODO:
 	- vagrant will have to run sass?
 
 - block more than 5 invalid attempts
-- check for smu email only - in php
+- check for smu email only - in php regex
 	- still buggy - test on vagrant
 - check to see if email has been used
 - buy .com domain
