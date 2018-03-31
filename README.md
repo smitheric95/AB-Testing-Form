@@ -3,10 +3,9 @@
 TODO:
 - block more than 5 invalid attempts
 - check for smu email only - in php regex
-	- still buggy - test on vagrant
-- check to see if email has been used
+	- test multiple emails
+	
 - buy .com domain
-- sanitize input for email and post form
 - show page even with invalid response
 - add captcha
 

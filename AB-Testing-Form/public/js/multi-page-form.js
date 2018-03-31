@@ -31,7 +31,7 @@ $('#nextBtn').click(function() {
             // email is invalid
             if (data != "true") {
                 $('#email').addClass("invalid");
-                helperText.text('Please enter a valid SMU email.');
+                helperText.text('This email has already been used or is not a valid SMU email.');
                 helperText.css('opacity', '1');
             }
 
