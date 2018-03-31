@@ -11,6 +11,10 @@
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet"> 
+
+<!-- reCaptcha v2 -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
 <!-- http://materializecss.com -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <!-- custom JavaScript and CSS -->
@@ -79,6 +83,10 @@ $(document).ready(function(){
                     <label class="email-label" for="email">Email</label>
                     <span class="helper-text">Please enter a valid SMU email.</span>
                 </div>
+            </div>
+            <div class="row">   
+                <div class="g-recaptcha" data-sitekey="
+                6LesHFAUAAAAAMQF66I8e25K6xMT8-8oKsqnGyc9" ></div>
             </div>
             
         </div> <!-- end page 1 -->

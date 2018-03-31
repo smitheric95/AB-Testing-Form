@@ -8,6 +8,7 @@ TODO:
 - buy .com domain
 - show page even with invalid response
 - add captcha
+- style captcha
 
 commands:
 - sass --watch sass/:css/

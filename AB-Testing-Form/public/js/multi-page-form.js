@@ -12,31 +12,38 @@ var timeStarted = 0; // When the user startd the form
 // when the "next" button is clicked, go to the next page
 $('#nextBtn').click(function() {
     console.log("currentPage: " + currentPage);
+
     // if the user hasn't validated email yet
-    
     if (currentPage == 0) {
         // show progress bar
         $('.progress').css('opacity', '1');
 
         var helperText = $('#page1').find('.helper-text');
 
-        // display 'validating email' text
-        console.log("validating email...");
-        helperText.text('Validating email...');
+        captcha = grecaptcha.getResponse();
 
-        // validate email
-        $.post("/validateEmail", { email: $('#email').val() }, function(data, status){
-            console.log("Email is valid: " + data);
+        if (captcha.length > 0 && $('#email').val().length > 0) {
+            // display 'validating email' text
+            console.log("validating email...");
+            helperText.text('Validating email...');
 
-            // email is invalid
-            if (data != "true") {
-                $('#email').addClass("invalid");
-                helperText.text('This email has already been used or is not a valid SMU email.');
-                helperText.css('opacity', '1');
-            }
+            // validate email
+            $.post("/validateEmail", { 
+                email: $('#email').val(),
+                recaptcha: captcha
+            }, function(data, status){
+                console.log("Email is valid: " + data);
 
-            nextPrev(1);
-        });
+                // email is invalid
+                if (data != "true") {
+                    $('#email').addClass("invalid");
+                    helperText.text('This email has already been used or is not a valid SMU email.');
+                    helperText.css('opacity', '1');
+                }
+
+                nextPrev(1);
+            });    
+        }
     }
     else {
         formIsValid = true;

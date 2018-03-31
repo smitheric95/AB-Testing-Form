@@ -4,6 +4,7 @@ use Slim\Http\Request;
 use Slim\Http\Response;
 
 require 'vendor/autoload.php';
+
 use SMTPValidateEmail\Validator as SmtpEmailValidator;
 
 // Routes
@@ -39,33 +40,55 @@ $app->post('/postForm', function ($request, $response, $args) {
 
 // Adapted from: https://github.com/zytzagoo/smtp-validate-email
 $app->post('/validateEmail', function ($request, $response, $args) { 
+	include('secret_key.php');
+
 	$data = $request->getParsedBody();
-	$email = $data[email];
 
-	$stmt = $this->db->prepare("SELECT email FROM Responses WHERE email = :email");
-	$stmt->bindValue(':email', $email, PDO::PARAM_INT);
+	$captcha_data = [
+	    'secret' => $secret_key,
+	    'response' => $data[recaptcha]
+	];
 
-	try {
-		$stmt->execute();
-	}
-	catch(PDOException $e) {
-		return $this->response->withStatus(400);
-	}
+	$ch = curl_init('https://www.google.com/recaptcha/api/siteverify');
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $captcha_data);
 
-	// email wasn't found, validate
-	if (count($stmt->fetchAll()) == 0) {
-		$sender = $data[email];
-		$validator = new SmtpEmailValidator($email, $sender);
+	// check google to see if user is valid
+	$response = curl_exec($ch);
+
+	// close the connection, release resources used
+	curl_close($ch);
+
+	$results = "false";
+
+	// user is valid
+	if ($response["success"] == true) {
 		
-		// If debug mode is turned on, logged data is printed as it happens:
-		// $validator->debug = true;
+		// verify email
+		$email = $data[email];
 
-		$results = $validator->validate();
-		$results = json_encode($results[$email]);
+		$stmt = $this->db->prepare("SELECT email FROM Responses WHERE email = :email");
+		$stmt->bindValue(':email', $email, PDO::PARAM_INT);
+
+		try {
+			$stmt->execute();
+		}
+		catch(PDOException $e) {
+			return $this->response->withStatus(400);
+		}
+
+		// email wasn't found, validate
+		if (count($stmt->fetchAll()) == 0) {
+			$sender = $data[email];
+			$validator = new SmtpEmailValidator($email, $sender);
+			
+			// If debug mode is turned on, logged data is printed as it happens:
+			// $validator->debug = true;
+			
+			$results = $validator->validate();
+			$results = json_encode($results[$email]);
+		}
 	}
-	else {
-		$results = "false";
-	}
-	
+
 	return $results;
 });

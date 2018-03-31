@@ -84,6 +84,13 @@ class ComposerStaticInitfbd71789f5f39711a8298a950745a368
                 0 => __DIR__ . '/..' . '/pimple/pimple/src',
             ),
         ),
+        'C' => 
+        array (
+            'Curl' => 
+            array (
+                0 => __DIR__ . '/..' . '/curl/curl/src',
+            ),
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
