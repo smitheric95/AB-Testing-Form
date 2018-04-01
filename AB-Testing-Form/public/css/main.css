@@ -35,9 +35,7 @@ h5 {
 
 .container {
 	background-color: #f9f9f9;
-	margin-bottom: 40px;
 	padding-bottom: 15px;
-	width: 85% !important;
 }
 
 body {
@@ -95,7 +93,6 @@ form {
 
 
 h5 > span {
-	/* TODO: change w theme */
 	color: #26a69a;
 	margin-right: 15px;
 }
@@ -112,3 +109,38 @@ h5 > span {
 	display: none;
 	font-size: 16px;
 }
+
+#captcha-button {
+	margin-left: 10px;
+}
+
+@media only screen and (max-width: 415px) {
+   .container {
+		width: 100% !important;
+		margin-top: -30px;
+	}
+
+	#mainForm {
+		margin-bottom: 100px;
+	}
+}
+
+@media only screen and (min-width: 416px) {
+	.container {
+		width: 85% !important;
+		margin-bottom: 40px;
+	}
+}
+
+@media only screen and (max-width: 348px) {
+	#page1 {
+		margin-left: -15px;
+	}
+}
+
+@media only screen and (max-width: 336px) {
+	#captcha-button {
+		margin-left: 8px;
+	}
+}
+
