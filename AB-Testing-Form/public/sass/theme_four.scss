@@ -7,6 +7,8 @@ purple accent-2 #e040fb
 
 */
 
+$spinner-default-color: #e040fb;
+
 @import 'materialize';
 
 .heading {
@@ -65,3 +67,4 @@ h5 > span {
 .errorMessage {
 	@extend .purple-text, .text-accent-2;
 }
+

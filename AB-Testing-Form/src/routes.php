@@ -34,9 +34,9 @@ $app->post('/postForm', function ($request, $response, $args) {
 		$stmt->execute();
 	}
 	catch(PDOException $e){
-		print($e);
-		return $this->response->withStatus(400);
-		// return $this->renderer->render($response, 'thankyou.phtml', $args);
+		// print($e);
+		// return $this->response->withStatus(400);
+		return $this->renderer->render($response, 'thankyou.phtml', $args);
 	}
 	
     return $this->renderer->render($response, 'thankyou.phtml', $args);

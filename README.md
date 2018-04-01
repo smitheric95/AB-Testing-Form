@@ -3,9 +3,9 @@
 TODO:
 - check for smu email only - in php regex
 	- test multiple emails
-- show page even with invalid response
 - look up post poster form
 - post dropout
+- loading animation
 
 commands:
 - sass --watch sass/:css/

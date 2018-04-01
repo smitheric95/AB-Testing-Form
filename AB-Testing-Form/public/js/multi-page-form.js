@@ -26,9 +26,12 @@ $('#nextBtn').click(function() {
 
         if (captcha.length > 0 && $('#email').val().length > 0) {
             // display 'validating email' text
-            console.log("validating email...");
-            helperText.text('Validating email...');
-            helperText.css('opacity', '1');
+            // console.log("validating email...");
+            // helperText.text('Validating email...');
+            // helperText.css('opacity', '1');
+
+            // show loading animation
+            $('.container').fadeOut();
 
             // validate email
             $.post("/validateEmail", { 
@@ -47,13 +50,14 @@ $('#nextBtn').click(function() {
                     // remove recaptcha
                     $('#captcha-button').remove();
                     $('#nextBtn').removeClass('g-recaptcha');
-                    $('body > div:nth-child(3)').remove();
-                    $('body > div:nth-child(3)').remove();
+                    $('body > div:nth-child(4)').remove();
+                    $('body > div:nth-child(4)').remove();
 
                     // grecaptcha.reset();
 
                     // email or user are valid!
                     nextPrev(1);
+                    $('.container').fadeIn();
                 }
             });    
         }
@@ -90,8 +94,8 @@ $('#nextBtn').click(function() {
             // remove recaptcha
             $('#captcha-button').remove();
             $('#nextBtn').removeClass('g-recaptcha');
-            $('body > div:nth-child(3)').remove();
-            $('body > div:nth-child(3)').remove();
+            $('body > div:nth-child(4)').remove();
+            $('body > div:nth-child(4)').remove();
 
             // grecaptcha.reset();
         }

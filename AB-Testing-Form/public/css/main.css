@@ -144,3 +144,10 @@ h5 > span {
 	}
 }
 
+.preloader-wrapper {
+	position: absolute;
+	left: 50%;
+	top: 25%;
+	margin-left: -42px;
+	z-index: -1;
+}

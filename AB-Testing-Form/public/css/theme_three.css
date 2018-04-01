@@ -5620,7 +5620,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   width: 100%;
   height: 100%;
   opacity: 0;
-  border-color: #26a69a; }
+  border-color: #f44336; }
 
 .spinner-blue,
 .spinner-blue-only {
