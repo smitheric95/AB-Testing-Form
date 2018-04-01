@@ -3,7 +3,6 @@
 TODO:
 - check for smu email only - in php regex
 	- test multiple emails
-- buy .com domain
 - show page even with invalid response
 - style captcha
 

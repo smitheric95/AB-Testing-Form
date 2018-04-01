@@ -135,7 +135,7 @@ purple accent-2 #e040fb
 .red.accent-2, .red.heading {
   background-color: #FF5252 !important; }
 
-.red-text.text-accent-2, label.red-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.red-text, h5 > span.red-text {
+.red-text.text-accent-2, label.red-text:not(.email-label), span.red-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.red-text, h5 > span.red-text, .red-text.errorMessage {
   color: #FF5252 !important; }
 
 .red.accent-3 {
@@ -219,7 +219,7 @@ purple accent-2 #e040fb
 .pink.accent-2, .pink.heading {
   background-color: #ff4081 !important; }
 
-.pink-text.text-accent-2, label.pink-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.pink-text, h5 > span.pink-text {
+.pink-text.text-accent-2, label.pink-text:not(.email-label), span.pink-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.pink-text, h5 > span.pink-text, .pink-text.errorMessage {
   color: #ff4081 !important; }
 
 .pink.accent-3 {
@@ -237,85 +237,85 @@ purple accent-2 #e040fb
 .purple, .heading {
   background-color: #9c27b0 !important; }
 
-.purple-text, label:not(.email-label), ul.select-dropdown > li:not(.disabled) > span, h5 > span {
+.purple-text, label:not(.email-label), span.helper-text, ul.select-dropdown > li:not(.disabled) > span, h5 > span, .errorMessage {
   color: #9c27b0 !important; }
 
 .purple.lighten-5, .lighten-5.heading {
   background-color: #f3e5f5 !important; }
 
-.purple-text.text-lighten-5, label.text-lighten-5:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-5, h5 > span.text-lighten-5 {
+.purple-text.text-lighten-5, label.text-lighten-5:not(.email-label), span.text-lighten-5.helper-text, ul.select-dropdown > li:not(.disabled) > span.text-lighten-5, h5 > span.text-lighten-5, .text-lighten-5.errorMessage {
   color: #f3e5f5 !important; }
 
 .purple.lighten-4, .lighten-4.heading {
   background-color: #e1bee7 !important; }
 
-.purple-text.text-lighten-4, label.text-lighten-4:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-4, h5 > span.text-lighten-4 {
+.purple-text.text-lighten-4, label.text-lighten-4:not(.email-label), span.text-lighten-4.helper-text, ul.select-dropdown > li:not(.disabled) > span.text-lighten-4, h5 > span.text-lighten-4, .text-lighten-4.errorMessage {
   color: #e1bee7 !important; }
 
 .purple.lighten-3, .lighten-3.heading {
   background-color: #ce93d8 !important; }
 
-.purple-text.text-lighten-3, label.text-lighten-3:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-3, h5 > span.text-lighten-3 {
+.purple-text.text-lighten-3, label.text-lighten-3:not(.email-label), span.text-lighten-3.helper-text, ul.select-dropdown > li:not(.disabled) > span.text-lighten-3, h5 > span.text-lighten-3, .text-lighten-3.errorMessage {
   color: #ce93d8 !important; }
 
 .purple.lighten-2, .lighten-2.heading {
   background-color: #ba68c8 !important; }
 
-.purple-text.text-lighten-2, label.text-lighten-2:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-2, h5 > span.text-lighten-2 {
+.purple-text.text-lighten-2, label.text-lighten-2:not(.email-label), span.text-lighten-2.helper-text, ul.select-dropdown > li:not(.disabled) > span.text-lighten-2, h5 > span.text-lighten-2, .text-lighten-2.errorMessage {
   color: #ba68c8 !important; }
 
 .purple.lighten-1, .lighten-1.heading {
   background-color: #ab47bc !important; }
 
-.purple-text.text-lighten-1, label.text-lighten-1:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-lighten-1, h5 > span.text-lighten-1 {
+.purple-text.text-lighten-1, label.text-lighten-1:not(.email-label), span.text-lighten-1.helper-text, ul.select-dropdown > li:not(.disabled) > span.text-lighten-1, h5 > span.text-lighten-1, .text-lighten-1.errorMessage {
   color: #ab47bc !important; }
 
 .purple.darken-1, .darken-1.heading {
   background-color: #8e24aa !important; }
 
-.purple-text.text-darken-1, label.text-darken-1:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-darken-1, h5 > span.text-darken-1 {
+.purple-text.text-darken-1, label.text-darken-1:not(.email-label), span.text-darken-1.helper-text, ul.select-dropdown > li:not(.disabled) > span.text-darken-1, h5 > span.text-darken-1, .text-darken-1.errorMessage {
   color: #8e24aa !important; }
 
 .purple.darken-2, .darken-2.heading {
   background-color: #7b1fa2 !important; }
 
-.purple-text.text-darken-2, label.text-darken-2:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-darken-2, h5 > span.text-darken-2 {
+.purple-text.text-darken-2, label.text-darken-2:not(.email-label), span.text-darken-2.helper-text, ul.select-dropdown > li:not(.disabled) > span.text-darken-2, h5 > span.text-darken-2, .text-darken-2.errorMessage {
   color: #7b1fa2 !important; }
 
 .purple.darken-3, .darken-3.heading {
   background-color: #6a1b9a !important; }
 
-.purple-text.text-darken-3, label.text-darken-3:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-darken-3, h5 > span.text-darken-3 {
+.purple-text.text-darken-3, label.text-darken-3:not(.email-label), span.text-darken-3.helper-text, ul.select-dropdown > li:not(.disabled) > span.text-darken-3, h5 > span.text-darken-3, .text-darken-3.errorMessage {
   color: #6a1b9a !important; }
 
 .purple.darken-4, .darken-4.heading {
   background-color: #4a148c !important; }
 
-.purple-text.text-darken-4, label.text-darken-4:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-darken-4, h5 > span.text-darken-4 {
+.purple-text.text-darken-4, label.text-darken-4:not(.email-label), span.text-darken-4.helper-text, ul.select-dropdown > li:not(.disabled) > span.text-darken-4, h5 > span.text-darken-4, .text-darken-4.errorMessage {
   color: #4a148c !important; }
 
 .purple.accent-1, .accent-1.heading {
   background-color: #ea80fc !important; }
 
-.purple-text.text-accent-1, label.text-accent-1:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-accent-1, h5 > span.text-accent-1 {
+.purple-text.text-accent-1, label.text-accent-1:not(.email-label), span.text-accent-1.helper-text, ul.select-dropdown > li:not(.disabled) > span.text-accent-1, h5 > span.text-accent-1, .text-accent-1.errorMessage {
   color: #ea80fc !important; }
 
 .purple.accent-2, .heading {
   background-color: #e040fb !important; }
 
-.purple-text.text-accent-2, label:not(.email-label), ul.select-dropdown > li:not(.disabled) > span, h5 > span {
+.purple-text.text-accent-2, label:not(.email-label), span.helper-text, ul.select-dropdown > li:not(.disabled) > span, h5 > span, .errorMessage {
   color: #e040fb !important; }
 
 .purple.accent-3, .accent-3.heading {
   background-color: #d500f9 !important; }
 
-.purple-text.text-accent-3, label.text-accent-3:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-accent-3, h5 > span.text-accent-3 {
+.purple-text.text-accent-3, label.text-accent-3:not(.email-label), span.text-accent-3.helper-text, ul.select-dropdown > li:not(.disabled) > span.text-accent-3, h5 > span.text-accent-3, .text-accent-3.errorMessage {
   color: #d500f9 !important; }
 
 .purple.accent-4, .accent-4.heading {
   background-color: #aa00ff !important; }
 
-.purple-text.text-accent-4, label.text-accent-4:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.text-accent-4, h5 > span.text-accent-4 {
+.purple-text.text-accent-4, label.text-accent-4:not(.email-label), span.text-accent-4.helper-text, ul.select-dropdown > li:not(.disabled) > span.text-accent-4, h5 > span.text-accent-4, .text-accent-4.errorMessage {
   color: #aa00ff !important; }
 
 .deep-purple {
@@ -387,7 +387,7 @@ purple accent-2 #e040fb
 .deep-purple.accent-2, .deep-purple.heading {
   background-color: #7c4dff !important; }
 
-.deep-purple-text.text-accent-2, label.deep-purple-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.deep-purple-text, h5 > span.deep-purple-text {
+.deep-purple-text.text-accent-2, label.deep-purple-text:not(.email-label), span.deep-purple-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.deep-purple-text, h5 > span.deep-purple-text, .deep-purple-text.errorMessage {
   color: #7c4dff !important; }
 
 .deep-purple.accent-3 {
@@ -471,7 +471,7 @@ purple accent-2 #e040fb
 .indigo.accent-2, .indigo.heading {
   background-color: #536dfe !important; }
 
-.indigo-text.text-accent-2, label.indigo-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.indigo-text, h5 > span.indigo-text {
+.indigo-text.text-accent-2, label.indigo-text:not(.email-label), span.indigo-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.indigo-text, h5 > span.indigo-text, .indigo-text.errorMessage {
   color: #536dfe !important; }
 
 .indigo.accent-3 {
@@ -555,7 +555,7 @@ purple accent-2 #e040fb
 .blue.accent-2, .blue.heading {
   background-color: #448AFF !important; }
 
-.blue-text.text-accent-2, label.blue-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.blue-text, h5 > span.blue-text {
+.blue-text.text-accent-2, label.blue-text:not(.email-label), span.blue-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.blue-text, h5 > span.blue-text, .blue-text.errorMessage {
   color: #448AFF !important; }
 
 .blue.accent-3 {
@@ -639,7 +639,7 @@ purple accent-2 #e040fb
 .light-blue.accent-2, .light-blue.heading {
   background-color: #40c4ff !important; }
 
-.light-blue-text.text-accent-2, label.light-blue-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.light-blue-text, h5 > span.light-blue-text {
+.light-blue-text.text-accent-2, label.light-blue-text:not(.email-label), span.light-blue-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.light-blue-text, h5 > span.light-blue-text, .light-blue-text.errorMessage {
   color: #40c4ff !important; }
 
 .light-blue.accent-3 {
@@ -723,7 +723,7 @@ purple accent-2 #e040fb
 .cyan.accent-2, .cyan.heading {
   background-color: #18ffff !important; }
 
-.cyan-text.text-accent-2, label.cyan-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.cyan-text, h5 > span.cyan-text {
+.cyan-text.text-accent-2, label.cyan-text:not(.email-label), span.cyan-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.cyan-text, h5 > span.cyan-text, .cyan-text.errorMessage {
   color: #18ffff !important; }
 
 .cyan.accent-3 {
@@ -807,7 +807,7 @@ purple accent-2 #e040fb
 .teal.accent-2, .teal.heading {
   background-color: #64ffda !important; }
 
-.teal-text.text-accent-2, label.teal-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.teal-text, h5 > span.teal-text {
+.teal-text.text-accent-2, label.teal-text:not(.email-label), span.teal-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.teal-text, h5 > span.teal-text, .teal-text.errorMessage {
   color: #64ffda !important; }
 
 .teal.accent-3 {
@@ -891,7 +891,7 @@ purple accent-2 #e040fb
 .green.accent-2, .green.heading {
   background-color: #69F0AE !important; }
 
-.green-text.text-accent-2, label.green-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.green-text, h5 > span.green-text {
+.green-text.text-accent-2, label.green-text:not(.email-label), span.green-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.green-text, h5 > span.green-text, .green-text.errorMessage {
   color: #69F0AE !important; }
 
 .green.accent-3 {
@@ -975,7 +975,7 @@ purple accent-2 #e040fb
 .light-green.accent-2, .light-green.heading {
   background-color: #b2ff59 !important; }
 
-.light-green-text.text-accent-2, label.light-green-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.light-green-text, h5 > span.light-green-text {
+.light-green-text.text-accent-2, label.light-green-text:not(.email-label), span.light-green-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.light-green-text, h5 > span.light-green-text, .light-green-text.errorMessage {
   color: #b2ff59 !important; }
 
 .light-green.accent-3 {
@@ -1059,7 +1059,7 @@ purple accent-2 #e040fb
 .lime.accent-2, .lime.heading {
   background-color: #eeff41 !important; }
 
-.lime-text.text-accent-2, label.lime-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.lime-text, h5 > span.lime-text {
+.lime-text.text-accent-2, label.lime-text:not(.email-label), span.lime-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.lime-text, h5 > span.lime-text, .lime-text.errorMessage {
   color: #eeff41 !important; }
 
 .lime.accent-3 {
@@ -1077,85 +1077,85 @@ purple accent-2 #e040fb
 .yellow, #nextBtn, #computer-button {
   background-color: #ffeb3b !important; }
 
-.yellow-text, span.helper-text, .errorMessage {
+.yellow-text {
   color: #ffeb3b !important; }
 
 .yellow.lighten-5, .lighten-5#nextBtn, .lighten-5#computer-button {
   background-color: #fffde7 !important; }
 
-.yellow-text.text-lighten-5, span.text-lighten-5.helper-text, .text-lighten-5.errorMessage {
+.yellow-text.text-lighten-5 {
   color: #fffde7 !important; }
 
 .yellow.lighten-4, .lighten-4#nextBtn, .lighten-4#computer-button {
   background-color: #fff9c4 !important; }
 
-.yellow-text.text-lighten-4, span.text-lighten-4.helper-text, .text-lighten-4.errorMessage {
+.yellow-text.text-lighten-4 {
   color: #fff9c4 !important; }
 
 .yellow.lighten-3, .lighten-3#nextBtn, .lighten-3#computer-button {
   background-color: #fff59d !important; }
 
-.yellow-text.text-lighten-3, span.text-lighten-3.helper-text, .text-lighten-3.errorMessage {
+.yellow-text.text-lighten-3 {
   color: #fff59d !important; }
 
 .yellow.lighten-2, .lighten-2#nextBtn, .lighten-2#computer-button {
   background-color: #fff176 !important; }
 
-.yellow-text.text-lighten-2, span.text-lighten-2.helper-text, .text-lighten-2.errorMessage {
+.yellow-text.text-lighten-2 {
   color: #fff176 !important; }
 
 .yellow.lighten-1, .lighten-1#nextBtn, .lighten-1#computer-button {
   background-color: #ffee58 !important; }
 
-.yellow-text.text-lighten-1, span.text-lighten-1.helper-text, .text-lighten-1.errorMessage {
+.yellow-text.text-lighten-1 {
   color: #ffee58 !important; }
 
 .yellow.darken-1, .darken-1#nextBtn, .darken-1#computer-button {
   background-color: #fdd835 !important; }
 
-.yellow-text.text-darken-1, span.text-darken-1.helper-text, .text-darken-1.errorMessage {
+.yellow-text.text-darken-1 {
   color: #fdd835 !important; }
 
 .yellow.darken-2, .darken-2#nextBtn, .darken-2#computer-button {
   background-color: #fbc02d !important; }
 
-.yellow-text.text-darken-2, span.text-darken-2.helper-text, .text-darken-2.errorMessage {
+.yellow-text.text-darken-2 {
   color: #fbc02d !important; }
 
 .yellow.darken-3, .darken-3#nextBtn, .darken-3#computer-button {
   background-color: #f9a825 !important; }
 
-.yellow-text.text-darken-3, span.text-darken-3.helper-text, .text-darken-3.errorMessage {
+.yellow-text.text-darken-3 {
   color: #f9a825 !important; }
 
 .yellow.darken-4, .darken-4#nextBtn, .darken-4#computer-button {
   background-color: #f57f17 !important; }
 
-.yellow-text.text-darken-4, span.text-darken-4.helper-text, .text-darken-4.errorMessage {
+.yellow-text.text-darken-4 {
   color: #f57f17 !important; }
 
 .yellow.accent-1, .accent-1#nextBtn, .accent-1#computer-button {
   background-color: #ffff8d !important; }
 
-.yellow-text.text-accent-1, span.text-accent-1.helper-text, .text-accent-1.errorMessage {
+.yellow-text.text-accent-1 {
   color: #ffff8d !important; }
 
 .yellow.accent-2, .yellow.heading, .heading#nextBtn, .heading#computer-button, .accent-2#nextBtn, .accent-2#computer-button {
   background-color: #ffff00 !important; }
 
-.yellow-text.text-accent-2, label.yellow-text:not(.email-label), label.errorMessage:not(.email-label), span.text-accent-2.helper-text, ul.select-dropdown > li:not(.disabled) > span.helper-text, h5 > span.helper-text, ul.select-dropdown > li:not(.disabled) > span.yellow-text, ul.select-dropdown > li:not(.disabled) > span.errorMessage, h5 > span.yellow-text, h5 > span.errorMessage, .text-accent-2.errorMessage {
+.yellow-text.text-accent-2, label.yellow-text:not(.email-label), span.yellow-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.yellow-text, h5 > span.yellow-text, .yellow-text.errorMessage {
   color: #ffff00 !important; }
 
 .yellow.accent-3, .accent-3#nextBtn, .accent-3#computer-button {
   background-color: #ffea00 !important; }
 
-.yellow-text.text-accent-3, span.text-accent-3.helper-text, .text-accent-3.errorMessage {
+.yellow-text.text-accent-3 {
   color: #ffea00 !important; }
 
 .yellow.accent-4, .accent-4#nextBtn, .accent-4#computer-button {
   background-color: #ffd600 !important; }
 
-.yellow-text.text-accent-4, span.text-accent-4.helper-text, .text-accent-4.errorMessage {
+.yellow-text.text-accent-4 {
   color: #ffd600 !important; }
 
 .amber {
@@ -1227,7 +1227,7 @@ purple accent-2 #e040fb
 .amber.accent-2, .amber.heading {
   background-color: #ffd740 !important; }
 
-.amber-text.text-accent-2, label.amber-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.amber-text, h5 > span.amber-text {
+.amber-text.text-accent-2, label.amber-text:not(.email-label), span.amber-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.amber-text, h5 > span.amber-text, .amber-text.errorMessage {
   color: #ffd740 !important; }
 
 .amber.accent-3 {
@@ -1311,7 +1311,7 @@ purple accent-2 #e040fb
 .orange.accent-2, .orange.heading {
   background-color: #ffab40 !important; }
 
-.orange-text.text-accent-2, label.orange-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.orange-text, h5 > span.orange-text {
+.orange-text.text-accent-2, label.orange-text:not(.email-label), span.orange-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.orange-text, h5 > span.orange-text, .orange-text.errorMessage {
   color: #ffab40 !important; }
 
 .orange.accent-3 {
@@ -1395,7 +1395,7 @@ purple accent-2 #e040fb
 .deep-orange.accent-2, .deep-orange.heading {
   background-color: #ff6e40 !important; }
 
-.deep-orange-text.text-accent-2, label.deep-orange-text:not(.email-label), ul.select-dropdown > li:not(.disabled) > span.deep-orange-text, h5 > span.deep-orange-text {
+.deep-orange-text.text-accent-2, label.deep-orange-text:not(.email-label), span.deep-orange-text.helper-text, ul.select-dropdown > li:not(.disabled) > span.deep-orange-text, h5 > span.deep-orange-text, .deep-orange-text.errorMessage {
   color: #ff6e40 !important; }
 
 .deep-orange.accent-3 {

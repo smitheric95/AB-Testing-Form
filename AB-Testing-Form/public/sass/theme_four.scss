@@ -22,7 +22,7 @@ label:not(.email-label) {
 }
 
 span.helper-text {
-	@extend .yellow-text;
+	@extend .purple-text, .text-accent-2;
 }
 
 #email:focus, input.select-dropdown:focus {
@@ -63,5 +63,5 @@ h5 > span {
 }
 
 .errorMessage {
-	@extend .yellow-text;	
+	@extend .purple-text, .text-accent-2;
 }
