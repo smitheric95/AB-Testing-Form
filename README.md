@@ -4,8 +4,8 @@ TODO:
 - check for smu email only - in php regex
 	- test multiple emails
 - look up post poster form
-- post dropout
-- loading animation
+- detailed readme
+- delete repo
 
 commands:
 - sass --watch sass/:css/

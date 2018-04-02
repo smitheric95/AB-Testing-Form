@@ -7,8 +7,15 @@ require 'vendor/autoload.php';
 
 use SMTPValidateEmail\Validator as SmtpEmailValidator;
 
-// Routes
+// helper function: https://stackoverflow.com/a/834355
+function endsWith($haystack, $needle) {
+    $length = strlen($needle);
 
+    return $length === 0 || 
+    (substr($haystack, -$length) === $needle);
+}
+
+// Routes
 $app->get('/', function (Request $request, Response $response, array $args) {	
     // Sample log message
     $this->logger->info("Slim-Skeleton '/' route");
@@ -64,12 +71,14 @@ $app->post('/validateEmail', function ($request, $response, $args) {
 	curl_close($ch);
 
 	$results = "false";
+	
+	$email = $data[email];
 
-	// user is valid
-	if ($response["success"] == true) {
+	// user and email are valid
+	if (($response["success"] == true) && filter_var($email, FILTER_VALIDATE_EMAIL) 
+		&& (endsWith($email, "@smu.edu") || endsWith($email, "@mail.smu.edu")) ) {
+
 		// verify email
-		$email = $data[email];
-
 		$stmt = $this->db->prepare("SELECT email FROM Responses WHERE email = :email");
 		$stmt->bindValue(':email', $email, PDO::PARAM_INT);
 

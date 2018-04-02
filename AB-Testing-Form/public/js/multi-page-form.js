@@ -43,7 +43,7 @@ $('#nextBtn').click(function() {
                 // email is invalid
                 if (data != "true") {
                     $('#email').addClass("invalid");
-                    helperText.text('This email has already been used or is not a valid SMU email.');
+                    helperText.text("This email has already been used or is not a valid SMU email. Note: If using a VPN, you'll need to disable it.");
                     helperText.css('opacity', '1');
                 }
                 else {
@@ -57,8 +57,9 @@ $('#nextBtn').click(function() {
 
                     // email or user are valid!
                     nextPrev(1);
-                    $('.container').fadeIn();
                 }
+
+                $('.container').fadeIn();
             });    
         }
     }
@@ -106,6 +107,16 @@ $('#nextBtn').click(function() {
 
         window.scrollTo(0,0);
     }
+});
+
+// post form before the user goes away
+$(window).on("beforeunload", function() { 
+    if (currentPage > 0 && $('#email').val().length > 0) {
+        $.post("/postForm", { 
+            email: $('#email').val(),
+            response: "{'dropout' : true, 'page' : " + currentPage + "}"
+        }); 
+    } 
 });
 
 // check validity of dropdown when its value changes
@@ -170,6 +181,8 @@ function nextPrev(n) {
 
         // change the hidden form element value
         $('#timeToComplete').val(timeElapsed);
+
+        $('.container').fadeOut();
 
         // ... the form gets submitted:
         document.getElementById("mainForm").submit();
