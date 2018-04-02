@@ -1,10 +1,8 @@
 # A/B Testing Form for CSE 8316
 
-TODO:
-- look up post poster form
-- detailed readme
-- delete repo
+This repo is a work in progress. Check back soon!
 
-commands:
+
+Commands:
 - sass --watch sass/:css/
 - composer require zytzagoo/smtp-validate-email --update-no-dev 
