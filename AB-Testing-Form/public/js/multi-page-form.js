@@ -8,7 +8,7 @@ var currentPage = 0; // Current page is first page
 showPage(currentPage); // Display the crurrent page
 var timeStarted = 0; // When the user startd the form
 
-// prevent recaptcha from shitting itself
+// prevent recaptcha from messing up
 alert = function() {};
 
 // when the "next" button is clicked, go to the next page
@@ -17,9 +17,6 @@ $('#nextBtn').click(function() {
 
     // if the user hasn't validated email yet
     if (currentPage == 0) {
-        // show progress bar
-        $('.progress').css('opacity', '1');
-
         var helperText = $('#page1').find('.helper-text');
 
         captcha = grecaptcha.getResponse();
@@ -31,7 +28,7 @@ $('#nextBtn').click(function() {
             // helperText.css('opacity', '1');
 
             // show loading animation
-            $('.container').fadeOut();
+            $('.loading-wrapper').fadeIn();
 
             // validate email
             $.post("/validateEmail", { 
@@ -59,7 +56,7 @@ $('#nextBtn').click(function() {
                     nextPrev(1);
                 }
 
-                $('.container').fadeIn();
+                $('.loading-wrapper').fadeOut();
             });    
         }
     }
@@ -104,9 +101,10 @@ $('#nextBtn').click(function() {
             // show warning text
             $('#errorMessage' + (currentPage+1)).css('display', 'block');
         }
-
-        window.scrollTo(0,0);
     }
+
+    // scroll to the top 
+    window.scrollTo(0,0);
 });
 
 // post form before the user goes away
@@ -182,7 +180,7 @@ function nextPrev(n) {
         // change the hidden form element value
         $('#timeToComplete').val(timeElapsed);
 
-        $('.container').fadeOut();
+        $('.loading-wrapper').fadeIn();
 
         // ... the form gets submitted:
         document.getElementById("mainForm").submit();
