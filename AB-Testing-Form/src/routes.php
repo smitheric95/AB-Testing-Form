@@ -27,25 +27,41 @@ $app->get('/', function (Request $request, Response $response, array $args) {
 $app->post('/postForm', function ($request, $response, $args) {
     // get the data from the form
     $data = $request->getParsedBody();
+    $email = $data["email"];
 
     // remove recaptcha response
     unset($data['g-recaptcha-response']);
 
 
-    $stmt = $this->db->prepare("INSERT INTO `Responses` VALUES (:email, :response)");
-	
-	$stmt->bindValue(':email',$data["email"],PDO::PARAM_STR);
-	$stmt->bindValue(':response',json_encode($data),PDO::PARAM_STR);
+    // check to make sure email hasn't been used
+	$stmt = $this->db->prepare("SELECT email FROM Responses WHERE email = :email");
+	$stmt->bindValue(':email', $email, PDO::PARAM_INT);
 
-	try{
+	try {
 		$stmt->execute();
 	}
-	catch(PDOException $e){
-		// print($e);
-		// return $this->response->withStatus(400);
-		return $this->renderer->render($response, 'thankyou.phtml', $args);
+	catch(PDOException $e) {
+		return $this->response->withStatus(400);
 	}
-	
+
+	// email wasn't found, post form
+	if (count($stmt->fetchAll()) == 0) {
+
+	    $stmt = $this->db->prepare("INSERT INTO `Responses` VALUES (:email, :response)");
+		
+		$stmt->bindValue(':email',$email,PDO::PARAM_STR);
+		$stmt->bindValue(':response',json_encode($data),PDO::PARAM_STR);
+
+		try{
+			$stmt->execute();
+		}
+		catch(PDOException $e){
+			// print($e);
+			// return $this->response->withStatus(400);
+			return $this->renderer->render($response, 'thankyou.phtml', $args);
+		}
+	}
+
     return $this->renderer->render($response, 'thankyou.phtml', $args);
 });
 
