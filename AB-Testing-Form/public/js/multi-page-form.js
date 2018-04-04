@@ -7,7 +7,7 @@
 var currentPage = 0; // Current page is first page
 showPage(currentPage); // Display the crurrent page
 var timeStarted = 0; // When the user startd the form
-
+var formIsComplete = false;
 // prevent recaptcha from messing up
 alert = function() {};
 
@@ -42,6 +42,8 @@ $('#nextBtn').click(function() {
                     $('#email').addClass("invalid");
                     helperText.text("This email has already been used or is not a valid SMU email. Note: If using a VPN, you'll need to disable it.");
                     helperText.css('opacity', '1');
+
+
                 }
                 else {
                     // remove recaptcha
@@ -109,7 +111,7 @@ $('#nextBtn').click(function() {
 
 // post form before the user goes away
 $(window).on("beforeunload", function() { 
-    if (currentPage > 0 && $('#email').val().length > 0) {
+    if (currentPage > 0 && $('#email').val().length > 0 && !formIsComplete) {
         $.post("/postForm", { 
             email: $('#email').val(),
             response: "{'dropout' : true, 'page' : " + currentPage + "}"
@@ -174,6 +176,8 @@ function nextPrev(n) {
 
     // if you have reached the end of the form...
     if (currentPage >= x.length) {
+        formIsComplete = true;
+
         // note when the time it took to complete the form
         timeElapsed = (Date.now() - timeStarted) / 1000;
 
