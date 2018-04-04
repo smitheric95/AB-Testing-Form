@@ -12,7 +12,8 @@ var formIsComplete = false;
 alert = function() {};
 
 // when the "next" button is clicked, go to the next page
-$('#nextBtn').click(function() {
+$('#nextBtn').click(function(e) {
+    e.preventDefault();
     console.log("currentPage: " + currentPage);
 
     // if the user hasn't validated email yet
