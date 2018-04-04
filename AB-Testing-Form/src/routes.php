@@ -18,7 +18,7 @@ function endsWith($haystack, $needle) {
 // Routes
 $app->get('/', function (Request $request, Response $response, array $args) {	
     // Sample log message
-    $this->logger->info("Slim-Skeleton '/' route");
+    // $this->logger->info("Slim-Skeleton '/' route");
     
     // Render index view
     return $this->renderer->render($response, 'index.phtml', $args);
@@ -55,27 +55,30 @@ $app->post('/validateEmail', function ($request, $response, $args) {
 
 	$data = $request->getParsedBody();
 
+	$url = 'https://www.google.com/recaptcha/api/siteverify';
+
 	$captcha_data = [
 	    'secret' => $secret_key,
 	    'response' => $data[recaptcha]
 	];
 
-	$ch = curl_init('https://www.google.com/recaptcha/api/siteverify');
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, $captcha_data);
+	$options = array(
+		'http' => array (
+			'method' => 'POST',
+			'content' => http_build_query($captcha_data)
+		)
+	);
 
-	// check google to see if user is valid
-	$response = curl_exec($ch);
-
-	// close the connection, release resources used
-	curl_close($ch);
+	$context  = stream_context_create($options);
+	$verify = file_get_contents($url, false, $context);
+	$captcha_response = json_decode($verify);
 
 	$results = "false";
 	
 	$email = $data[email];
 
 	// user and email are valid
-	if (($response["success"] == true) && filter_var($email, FILTER_VALIDATE_EMAIL) 
+	if (($captcha_response->success == true) && filter_var($email, FILTER_VALIDATE_EMAIL) 
 		&& (endsWith($email, "@smu.edu") || endsWith($email, "@mail.smu.edu")) ) {
 
 		// verify email
