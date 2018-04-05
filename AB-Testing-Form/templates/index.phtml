@@ -36,6 +36,7 @@ $(document).ready(function(){
 	fileNames = ["/AB-Testing-Form/public/css/theme_one.css", "/AB-Testing-Form/public/css/theme_two.css", "/AB-Testing-Form/public/css/theme_three.css" ,"/AB-Testing-Form/public/css/theme_four.css"];
 
 	$('#pageStyle').attr('href', fileNames[randomNum]);
+	$('#themeChosen').val((randomNum+1));
 
 	// reset the form
 	$('#mainForm')[0].reset();

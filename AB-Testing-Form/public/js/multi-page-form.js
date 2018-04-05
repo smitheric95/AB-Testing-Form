@@ -115,7 +115,9 @@ $(window).on("beforeunload", function() {
     if (currentPage > 0 && $('#email').val().length > 0 && !formIsComplete) {
         $.post("/postForm", { 
             email: $('#email').val(),
-            response: "{'dropout' : true, 'page' : " + currentPage + "}"
+            dropout: true,
+            currentPage: currentPage,
+            themeChosen: $('#themeChosen').val()
         }); 
     } 
 });
