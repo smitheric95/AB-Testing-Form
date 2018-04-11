@@ -17,7 +17,7 @@
 	* Android
 	* I don't own a smartphone.
 
-4. How technologically savy are you?
+4. How technologically savvy are you?
 	* Expert
 	* Intermediate
 	* Beginner
@@ -40,7 +40,7 @@
 7. 
 
 ## Section 2
-1. What school do you attend?
+1. Which school do you attend?
 	* Dedman
 	* Dedman Law
 	* Meadows
@@ -67,7 +67,7 @@
 
 
 ## Section 3
-1. How rushed did you feel while competing this form?
+1. How rushed did you feel while completing this form?
 	* Very rushed
 	* Somewhat rushed
 	* Not very rushed
