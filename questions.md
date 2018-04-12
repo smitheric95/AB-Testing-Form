@@ -37,7 +37,6 @@
 	* Buying items online
 	* Python list comprehension
 
-7. 
 
 ## Section 2
 1. Which school do you attend?
