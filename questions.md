@@ -10,6 +10,7 @@
 	* Mac (MacOS/OSX)
 	* PC (Windows)
 	* Linux
+	* I'm not sure
 	* I don't own a computer. 
 
 3. What kind of smartphone do you use?
