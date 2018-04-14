@@ -10,3 +10,4 @@ provision.sh
 smutechsurvey.com
 *.log
 AB-Testing-Form/src/secret_key.php
+Data Analysis/Data/db_export.csv
