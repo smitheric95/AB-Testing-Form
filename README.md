@@ -6,6 +6,7 @@ This repo is a work in progress. Check back soon!
 TODO:
 - percentages over bars
 - break up last page by color scheme
+- update questions.md file
 
 Commands:
 - sass --watch sass/:css/
