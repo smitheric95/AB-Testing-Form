@@ -5,9 +5,7 @@ This repo is a work in progress. Check back soon!
 
 TODO:
 - percentages over bars
-- break up last page by color scheme
 - update questions.md file
-- remove emails from git
 - time to complete 
 
 Commands:
