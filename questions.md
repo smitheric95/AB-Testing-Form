@@ -74,12 +74,21 @@
 	* Not at all rushed
 
 2. How mentally demanding was filling out this form?
+	* Very demanding
+	* Somewhat demanding
+	* Not very demanding
+	* Not at all demanding
 
 3. How many questions did you find difficult to answer?
-	* All, some, none
+	* Many questions
+	* A few questions
+	* No questions
 
 4. How frustrated or confused were you while completing this form?
-	* Very, somewhat, not at all
+	* Very frustrated
+	* Somewhat frustrated
+	* Not very frustrated
+	* Not at all frustrated
 
 5. How happy were you completing this form?
 	* Happy
@@ -94,8 +103,7 @@
 	* Not at all likely
 
 7. What was the first question in this form?
-	* Some random questions
+	* How often do you use a desktop or laptop computer?
+	* What school do you attend?
+	* How technologically savy are you?
 
-### Behavior metrics
-* time to complete
-* dropout

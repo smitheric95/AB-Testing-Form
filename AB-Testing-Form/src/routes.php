@@ -95,7 +95,7 @@ $app->post('/validateEmail', function ($request, $response, $args) {
 
 	// user and email are valid
 	if (($captcha_response->success == true) && filter_var($email, FILTER_VALIDATE_EMAIL) 
-		&& (endsWith($email, "@smu.edu") || endsWith($email, "@mail.smu.edu")) ) {
+		&& (endsWith($email, "@lyle.smu.edu") || endsWith($email, "@smu.edu") || endsWith($email, "@mail.smu.edu")) ) {
 
 		// verify email
 		$stmt = $this->db->prepare("SELECT email FROM Responses WHERE email = :email");

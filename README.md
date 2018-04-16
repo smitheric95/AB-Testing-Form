@@ -5,8 +5,8 @@ This repo is a work in progress. Check back soon!
 
 TODO:
 - percentages over bars
-- update questions.md file
 - time to complete 
+- manually add numbers to stacked bars
 
 Commands:
 - sass --watch sass/:css/
