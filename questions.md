@@ -105,5 +105,5 @@
 7. What was the first question in this form?
 	* How often do you use a desktop or laptop computer?
 	* What school do you attend?
-	* How technologically savy are you?
+	* How technologically savvy are you?
 
