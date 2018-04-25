@@ -1,18 +1,11 @@
 # A/B Testing Form for CSE 8316
 
-This repo is a work in progress. Check back soon!
+A live version of this site can be found at [SMUTechSurvey.com](http://smutechsurvey.com).
 
+In this project, I attempted to collect and analyze usability data based off one independent variable: color scheme. I implemented a custom website that utilizes A/B testing to collect data on users. The site, a simple user survey, collected usability information like success rate, time to completion, and overall user satisfaction. Variation came from changing the primary and accent colors of the website for different users. I then analyzed the resulting data in order to better predict how color scheme influences user behavior.
 
-TODO:
-- percentages over bars
-- time to complete 
-- manually add numbers to stacked bars
+The data analysis can be found at [https://github.com/smitheric95/AB-Testing-Form/blob/master/Data Analysis/Survey Data Analysis.ipynb](https://github.com/smitheric95/AB-Testing-Form/blob/master/Data Analysis/Survey Data Analysis.ipynb)
 
-Commands:
-- sass --watch sass/:css/
-- composer require zytzagoo/smtp-validate-email --update-no-dev 
-
-Themes:
 
 Theme One: 
 	Teal: #26a69a
