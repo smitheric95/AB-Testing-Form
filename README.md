@@ -6,4 +6,4 @@ In this project, I attempted to collect and analyze usability data based off one
 
 The data analysis can be found at [Data Analysis/Survey Data Analysis.ipynb](./Data%20Analysis/Survey%20Data%20Analysis.ipynb)
 
-The full report can be read [here](Project%20Report.pdf).
+The full report can be read [here](Project%20Report.pdf). Please read it as it took me forever to write.
